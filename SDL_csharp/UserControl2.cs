@@ -52,8 +52,9 @@ namespace SDL_csharp
             MySqlCommand cmd = new MySqlCommand("SELECT `Cost` FROM `foodorder` WHERE `ItemName` = '" + list + "'", db.getConnection());
             db.openConnection();
             MySqlDataReader da = cmd.ExecuteReader();
-            while(da.Read()){
-            textBox2.Text = da.GetValue(0).ToString();
+            while (da.Read())
+            {
+                textBox2.Text = da.GetValue(0).ToString();
             }
             db.closeConnection();
 
@@ -101,6 +102,17 @@ namespace SDL_csharp
                 cartbox.Rows[r].Cells[3].Value = total_t.Text;
             }
 
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+            
+        }
+
+        private void cartbox_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

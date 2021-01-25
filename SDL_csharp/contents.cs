@@ -26,6 +26,7 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Hide();
             fillbox4.Hide();
+            fillbox6.Hide();
            
             userControl11.Hide();
             userControl21.Hide();
@@ -46,7 +47,7 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Hide();
             fillbox4.Hide();
-            ;
+            fillbox6.Hide();
             userControl11.Show();
             userControl11.BringToFront();
 
@@ -66,7 +67,7 @@ namespace SDL_csharp
             fillbox2.Show();
             fillbox3.Hide();
             fillbox4.Hide();
-           ;
+            fillbox6.Hide();
             userControl11.Hide();
             userControl21.Show();
             userControl21.BringToFront();
@@ -81,9 +82,9 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Show();
             fillbox4.Hide();
-            
-            
-            
+            fillbox6.Hide();
+
+
         }
 
         private void search_b_Click(object sender, EventArgs e)
@@ -92,10 +93,10 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Hide();
             fillbox4.Show();
-           
-            
-            
-            
+            fillbox6.Hide();
+
+
+
 
         }
 
@@ -105,8 +106,8 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Hide();
             fillbox4.Hide();
-            
-            
+            fillbox6.Hide();
+
         }
 
         private void controlpanel_Load(object sender, EventArgs e)
@@ -131,10 +132,14 @@ namespace SDL_csharp
             fillbox2.Hide();
             fillbox3.Hide();
             fillbox4.Hide();
-            
             fillbox6.Show();
             userControl31.Show();
             userControl31.BringToFront();
+
+        }
+
+        private void fillbox6_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

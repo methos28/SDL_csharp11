@@ -97,6 +97,7 @@ namespace SDL_csharp
             this.fillbox6.ShadowDecoration.Parent = this.fillbox6;
             this.fillbox6.Size = new System.Drawing.Size(10, 45);
             this.fillbox6.TabIndex = 12;
+            this.fillbox6.TextChanged += new System.EventHandler(this.fillbox6_TextChanged);
             // 
             // guna2Button1
             // 
