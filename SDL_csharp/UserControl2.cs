@@ -111,9 +111,18 @@ namespace SDL_csharp
             
         }
 
-        private void cartbox_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void cartbox_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
 
+        for(int i = 0; i < cartbox.Rows.Count; i++)
+            {
+
+            }         
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
         }
     }
 }

@@ -52,6 +52,8 @@ namespace SDL_csharp
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tct = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantity_t)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartbox)).BeginInit();
@@ -283,7 +285,7 @@ namespace SDL_csharp
             this.cartbox.ThemeStyle.RowsStyle.Height = 22;
             this.cartbox.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.cartbox.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.cartbox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartbox_CellContentClick);
+            this.cartbox.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.cartbox_RowsAdded);
             // 
             // Column1
             // 
@@ -322,6 +324,7 @@ namespace SDL_csharp
             this.guna2Button1.Size = new System.Drawing.Size(103, 31);
             this.guna2Button1.TabIndex = 13;
             this.guna2Button1.Text = "Remove";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -352,11 +355,35 @@ namespace SDL_csharp
             this.guna2Button3.Text = "Add To Cart";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(331, 390);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 20);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Grand Total";
+            // 
+            // tct
+            // 
+            this.tct.AutoSize = true;
+            this.tct.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tct.ForeColor = System.Drawing.Color.White;
+            this.tct.Location = new System.Drawing.Point(361, 410);
+            this.tct.Name = "tct";
+            this.tct.Size = new System.Drawing.Size(37, 20);
+            this.tct.TabIndex = 17;
+            this.tct.Text = "0.00";
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.tct);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
@@ -399,5 +426,7 @@ namespace SDL_csharp
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label tct;
     }
 }
