@@ -16,5 +16,15 @@ namespace SDL_csharp
         {
             InitializeComponent();
         }
+
+        private void UserControl4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

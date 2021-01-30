@@ -142,5 +142,10 @@ namespace SDL_csharp
         {
 
         }
+
+        private void contents_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

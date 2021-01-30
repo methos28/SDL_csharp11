@@ -361,6 +361,7 @@ namespace SDL_csharp
             this.Name = "contents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainFrame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.contents_FormClosing);
             this.Load += new System.EventHandler(this.contents_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

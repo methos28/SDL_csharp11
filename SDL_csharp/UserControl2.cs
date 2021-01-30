@@ -80,9 +80,9 @@ namespace SDL_csharp
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            if (quantity_t.Text == "")
+            if (quantity_t.Text == ""|| quantity_t.Text == "0")
             {
-                MessageBox.Show(" Select Quantity to Add to Cart. ");
+                MessageBox.Show(" Cart Quantity cant be 0 ");
             }
             else if (total_t.Text == "")
             {
@@ -101,6 +101,23 @@ namespace SDL_csharp
                 cartbox.Rows[r].Cells[2].Value = quantity_t.Text;
                 cartbox.Rows[r].Cells[3].Value = total_t.Text;
             }
+
+            String itm = textBox1.Text;
+            String cst = textBox2.Text;
+            String tcst = total_t.Text;
+            String quan = quantity_t.Value.ToString();
+
+            data db = new data();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `biller`(`ItemName`, `Cost`, `Quantity`, `TotalCost`) VALUES (@item, @price, @qnt, @gp)", db.getConnection());
+
+            db.openConnection();
+            cmd.Parameters.Add("@item", MySqlDbType.VarChar).Value = itm;
+            cmd.Parameters.Add("@qnt", MySqlDbType.VarChar).Value = quan;
+            cmd.Parameters.Add("@price", MySqlDbType.VarChar).Value = cst;
+            cmd.Parameters.Add("@gp", MySqlDbType.VarChar).Value = tcst;
+
+            cmd.ExecuteNonQuery();
+            db.closeConnection();
 
 
         }
@@ -123,6 +140,12 @@ namespace SDL_csharp
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
