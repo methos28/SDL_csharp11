@@ -82,7 +82,7 @@ namespace SDL_csharp
         {
             if (quantity_t.Text == ""|| quantity_t.Text == "0")
             {
-                MessageBox.Show(" Cart Quantity cant be 0 ");
+                MessageBox.Show(" Cart Quantity cant be Empty/0 ");
             }
             else if (total_t.Text == "")
             {
@@ -131,10 +131,7 @@ namespace SDL_csharp
         private void cartbox_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
 
-        for(int i = 0; i < cartbox.Rows.Count; i++)
-            {
-
-            }         
+      
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
