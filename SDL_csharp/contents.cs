@@ -105,10 +105,12 @@ namespace SDL_csharp
             fillbox1.Hide();
             fillbox2.Hide();
             fillbox3.Hide();
-            fillbox4.Hide();
+            fillbox4.Show();
             fillbox6.Hide();
 
         }
+
+
 
         private void controlpanel_Load(object sender, EventArgs e)
         {

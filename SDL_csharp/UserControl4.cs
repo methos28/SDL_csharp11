@@ -30,17 +30,8 @@ namespace SDL_csharp
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            String list = idbox.Text;
-            data db = new data();
-            DataTable table = new DataTable();
-            MySqlCommand cmd = new MySqlCommand("SELECT `Cost` FROM `foodorder` WHERE `ItemName` = '" + list + "'", db.getConnection());
-            db.openConnection();
-            MySqlDataReader da = cmd.ExecuteReader();
-            while (da.Read())
-            {
-                textBox2.Text = da.GetValue(0).ToString();
-            }
-            db.closeConnection();
+
+
 
         }
     }

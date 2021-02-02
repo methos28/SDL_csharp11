@@ -249,7 +249,7 @@ namespace SDL_csharp
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(109, 31);
             this.guna2Button2.TabIndex = 14;
-            this.guna2Button2.Text = "Order";
+            this.guna2Button2.Text = "Print Bill";
             // 
             // guna2Button3
             // 
@@ -375,7 +375,6 @@ namespace SDL_csharp
             this.cartbox.ThemeStyle.RowsStyle.Height = 22;
             this.cartbox.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.cartbox.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.cartbox.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.cartbox_RowsAdded);
             // 
             // UserControl2
             // 

@@ -67,10 +67,15 @@ namespace SDL_csharp
 
         private void quantity_t_ValueChanged(object sender, EventArgs e)
         {
+            // Changing TOTAL COST according to Quantity
+            //
             int q = int.Parse(quantity_t.Value.ToString());
             int tcost = int.Parse(textBox2.Text);
 
             total_t.Text = (q * tcost).ToString();
+
+            // END
+            //
         }
 
         private void quantity_t_Leave(object sender, EventArgs e)
@@ -80,7 +85,12 @@ namespace SDL_csharp
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            if (quantity_t.Text == ""|| quantity_t.Text == "0")
+            //
+            //
+            // Verifying Every Value and adding to GridviewBox Start
+            //
+            //
+            if (quantity_t.Text == "" || quantity_t.Text == "0")
             {
                 MessageBox.Show(" Cart Quantity cant be Empty/0 ");
             }
@@ -88,7 +98,7 @@ namespace SDL_csharp
             {
                 MessageBox.Show(" You Havent Selected anything ");
             }
-            else if(textBox1.Text == "")
+            else if (textBox1.Text == "")
             {
                 MessageBox.Show(" You Havent Selected anything ");
             }
@@ -101,7 +111,13 @@ namespace SDL_csharp
                 cartbox.Rows[r].Cells[2].Value = quantity_t.Text;
                 cartbox.Rows[r].Cells[3].Value = total_t.Text;
             }
+            //
+            //
+            //END
 
+            //
+            //  Adding Values into Local Database using MySql
+            //
             String itm = textBox1.Text;
             String cst = textBox2.Text;
             String tcst = total_t.Text;
@@ -120,6 +136,13 @@ namespace SDL_csharp
             db.closeConnection();
 
 
+            //
+            // END
+            //
+
+
+
+
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -128,14 +151,9 @@ namespace SDL_csharp
             
         }
 
-        private void cartbox_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
-        {
-
-      
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            //Removing Rows on REMOVE BUTTON CLICK
             cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
         }
 

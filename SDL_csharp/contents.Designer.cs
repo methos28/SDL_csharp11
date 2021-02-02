@@ -289,7 +289,7 @@ namespace SDL_csharp
             this.view_b.ShadowDecoration.Parent = this.view_b;
             this.view_b.Size = new System.Drawing.Size(253, 45);
             this.view_b.TabIndex = 1;
-            this.view_b.Text = "View Bill";
+            this.view_b.Text = "Delete Item";
             this.view_b.Click += new System.EventHandler(this.view_b_Click);
             // 
             // add
