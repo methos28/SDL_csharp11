@@ -118,22 +118,22 @@ namespace SDL_csharp
             //
             //  Adding Values into Local Database using MySql
             //
-            String itm = textBox1.Text;
-            String cst = textBox2.Text;
-            String tcst = total_t.Text;
-            String quan = quantity_t.Value.ToString();
+            //String itm = textBox1.Text;
+            //String cst = textBox2.Text;
+            //String tcst = total_t.Text;
+            //String quan = quantity_t.Value.ToString();
 
-            data db = new data();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `biller`(`ItemName`, `Cost`, `Quantity`, `TotalCost`) VALUES (@item, @price, @qnt, @gp)", db.getConnection());
+            //data db = new data();
+            //MySqlCommand cmd = new MySqlCommand("INSERT INTO `biller`(`ItemName`, `Cost`, `Quantity`, `TotalCost`) VALUES (@item, @price, @qnt, @gp)", db.getConnection());
 
-            db.openConnection();
-            cmd.Parameters.Add("@item", MySqlDbType.VarChar).Value = itm;
-            cmd.Parameters.Add("@qnt", MySqlDbType.VarChar).Value = quan;
-            cmd.Parameters.Add("@price", MySqlDbType.VarChar).Value = cst;
-            cmd.Parameters.Add("@gp", MySqlDbType.VarChar).Value = tcst;
+            //db.openConnection();
+            //cmd.Parameters.Add("@item", MySqlDbType.VarChar).Value = itm;
+            //cmd.Parameters.Add("@qnt", MySqlDbType.VarChar).Value = quan;
+            //cmd.Parameters.Add("@price", MySqlDbType.VarChar).Value = cst;
+            //cmd.Parameters.Add("@gp", MySqlDbType.VarChar).Value = tcst;
 
-            cmd.ExecuteNonQuery();
-            db.closeConnection();
+            //cmd.ExecuteNonQuery();
+            //db.closeConnection();
 
 
             //
@@ -161,6 +161,33 @@ namespace SDL_csharp
         {
 
 
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Int64 amt, total;
+            total = 0;
+            for (int i = 0; i < cartbox.Rows.Count; i++)
+            {
+                amt = Convert.ToInt64(cartbox.Rows[i].Cells["Column4"].Value.ToString());
+
+                total = amt + total;
+                tct.Text = total.ToString();
+            }
+        }
+
+        private void cartbox_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl2_Leave(object sender, EventArgs e)
+        {
+            //data db = new data();
+            //MySqlCommand cmd = new MySqlCommand("TRUNCATE ` biller `", db.getConnection());
+            //db.openConnection();
+            //cmd.ExecuteNonQuery();
+            //db.closeConnection();
         }
     }
 }
