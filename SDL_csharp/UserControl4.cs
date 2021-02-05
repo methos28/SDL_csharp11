@@ -18,22 +18,6 @@ namespace SDL_csharp
             InitializeComponent();
         }
 
-        private void UserControl4_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
 
         private void cate_UC_SelectedIndexChanged(object sender, EventArgs e)
         {
