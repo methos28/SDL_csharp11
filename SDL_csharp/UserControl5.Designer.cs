@@ -45,7 +45,7 @@ namespace SDL_csharp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label2.Location = new System.Drawing.Point(61, 115);
+            this.label2.Location = new System.Drawing.Point(61, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(468, 21);
             this.label2.TabIndex = 1;
@@ -56,7 +56,7 @@ namespace SDL_csharp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label3.Location = new System.Drawing.Point(146, 151);
+            this.label3.Location = new System.Drawing.Point(146, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(299, 21);
             this.label3.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace SDL_csharp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label4.Location = new System.Drawing.Point(97, 189);
+            this.label4.Location = new System.Drawing.Point(97, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(392, 21);
             this.label4.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace SDL_csharp
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label5.Location = new System.Drawing.Point(147, 228);
+            this.label5.Location = new System.Drawing.Point(147, 305);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(286, 21);
             this.label5.TabIndex = 4;
@@ -97,7 +97,7 @@ namespace SDL_csharp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;

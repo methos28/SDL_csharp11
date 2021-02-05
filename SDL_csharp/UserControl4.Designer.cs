@@ -47,7 +47,7 @@ namespace SDL_csharp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.label1.Location = new System.Drawing.Point(42, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 21);
@@ -62,7 +62,7 @@ namespace SDL_csharp
             this.cate_UC.FocusedColor = System.Drawing.Color.Empty;
             this.cate_UC.FocusedState.Parent = this.cate_UC;
             this.cate_UC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cate_UC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cate_UC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.cate_UC.FormattingEnabled = true;
             this.cate_UC.HoverState.Parent = this.cate_UC;
             this.cate_UC.ItemHeight = 30;
@@ -87,7 +87,7 @@ namespace SDL_csharp
             // 
             this.cat_combo.AutoSize = true;
             this.cat_combo.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.cat_combo.ForeColor = System.Drawing.Color.White;
+            this.cat_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.cat_combo.Location = new System.Drawing.Point(42, 23);
             this.cat_combo.Name = "cat_combo";
             this.cat_combo.Size = new System.Drawing.Size(87, 20);
@@ -96,19 +96,21 @@ namespace SDL_csharp
             // 
             // itmlist
             // 
+            this.itmlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.itmlist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itmlist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.itmlist.FormattingEnabled = true;
             this.itmlist.ItemHeight = 20;
             this.itmlist.Location = new System.Drawing.Point(46, 126);
             this.itmlist.Name = "itmlist";
-            this.itmlist.Size = new System.Drawing.Size(169, 244);
+            this.itmlist.Size = new System.Drawing.Size(169, 242);
             this.itmlist.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.label2.Location = new System.Drawing.Point(345, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 21);
@@ -117,6 +119,7 @@ namespace SDL_csharp
             // 
             // itm_t
             // 
+            this.itm_t.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.itm_t.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.itm_t.DefaultText = "";
             this.itm_t.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -127,6 +130,7 @@ namespace SDL_csharp
             this.itm_t.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.itm_t.FocusedState.Parent = this.itm_t;
             this.itm_t.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itm_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.itm_t.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.itm_t.HoverState.Parent = this.itm_t;
             this.itm_t.Location = new System.Drawing.Point(349, 49);
@@ -141,6 +145,7 @@ namespace SDL_csharp
             // 
             // cst_t
             // 
+            this.cst_t.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.cst_t.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cst_t.DefaultText = "";
             this.cst_t.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -151,6 +156,7 @@ namespace SDL_csharp
             this.cst_t.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cst_t.FocusedState.Parent = this.cst_t;
             this.cst_t.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cst_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.cst_t.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cst_t.HoverState.Parent = this.cst_t;
             this.cst_t.Location = new System.Drawing.Point(349, 149);
@@ -167,7 +173,7 @@ namespace SDL_csharp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.label3.Location = new System.Drawing.Point(345, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 21);
@@ -176,10 +182,14 @@ namespace SDL_csharp
             // 
             // edtb
             // 
+            this.edtb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.edtb.BorderThickness = 1;
             this.edtb.CheckedState.Parent = this.edtb;
+            this.edtb.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.edtb.CustomImages.Parent = this.edtb;
+            this.edtb.FillColor = System.Drawing.Color.Transparent;
             this.edtb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edtb.ForeColor = System.Drawing.Color.White;
+            this.edtb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.edtb.HoverState.Parent = this.edtb;
             this.edtb.Location = new System.Drawing.Point(349, 388);
             this.edtb.Name = "edtb";
@@ -191,10 +201,14 @@ namespace SDL_csharp
             // 
             // rmvb
             // 
+            this.rmvb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.rmvb.BorderThickness = 1;
             this.rmvb.CheckedState.Parent = this.rmvb;
+            this.rmvb.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.rmvb.CustomImages.Parent = this.rmvb;
+            this.rmvb.FillColor = System.Drawing.Color.Transparent;
             this.rmvb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rmvb.ForeColor = System.Drawing.Color.White;
+            this.rmvb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.rmvb.HoverState.Parent = this.rmvb;
             this.rmvb.Location = new System.Drawing.Point(46, 388);
             this.rmvb.Name = "rmvb";
@@ -208,7 +222,7 @@ namespace SDL_csharp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.label4.Location = new System.Drawing.Point(345, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 20);
@@ -217,6 +231,7 @@ namespace SDL_csharp
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -227,6 +242,7 @@ namespace SDL_csharp
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(349, 253);
@@ -243,7 +259,7 @@ namespace SDL_csharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rmvb);
@@ -256,6 +272,7 @@ namespace SDL_csharp
             this.Controls.Add(this.cate_UC);
             this.Controls.Add(this.cat_combo);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.Name = "UserControl4";
             this.Size = new System.Drawing.Size(590, 450);
             this.ResumeLayout(false);

@@ -29,9 +29,9 @@ namespace SDL_csharp
             fillbox6.Hide();
            
             userControl11.Hide();
-            userControl21.Hide();
+            //userControl21.Hide();
             userControl31.Show();
-            userControl41.Hide();
+            //userControl41.Hide();
             userControl51.Hide();
             
          
@@ -71,8 +71,8 @@ namespace SDL_csharp
             fillbox7.Hide();
             fillbox6.Hide();
             userControl11.Hide();
-            userControl21.Show();
-            userControl21.BringToFront();
+            //userControl21.Show();
+            //userControl21.BringToFront();
         
 
 
@@ -128,8 +128,8 @@ namespace SDL_csharp
             fillbox3.Show();
             fillbox7.Hide();
             fillbox6.Hide();
-            userControl41.BringToFront();
-            userControl41.Show();
+            //userControl41.BringToFront();
+            //userControl41.Show();
 
         }
 
