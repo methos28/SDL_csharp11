@@ -37,16 +37,20 @@ namespace SDL_csharp
         private void rmvb_Click(object sender, EventArgs e)
         {
             data db = new data();
-            String item = itmlist.SelectedValue.ToString();
+            String item = itm_t.Text;
             MySqlCommand cmd = new MySqlCommand("DELETE FROM `foodorder` WHERE `ItemName` = '" + item + "'", db.getConnection());
             db.openConnection();
             if (cate_UC.Text == "")
             {
                 MessageBox.Show("You need to select Category First.");
             }
-            else if (itmlist.SelectedValue.ToString() == "")
+            else if (item == "")
             {
                 MessageBox.Show("Select An Item To DELETE from the List.");
+            }
+            else if(item != itmlist.GetItemText(itmlist.SelectedItem))
+            {
+                MessageBox.Show("Do not Edit the Item name.");
             }
             else
             {
@@ -59,24 +63,40 @@ namespace SDL_csharp
 
         private void edtb_Click(object sender, EventArgs e)
         {
-            String itm_o = itmlist.SelectedValue.ToString();
+            
             String cst = cst_t.Text;
             String itm = itm_t.Text;
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "' WHERE ItemName = '"+itm_o+"'" , db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "' WHERE ItemName = '"+ itm +"'" , db.getConnection());
             db.openConnection();
 
             if (itm_t.Text == "") 
             {
                 MessageBox.Show("Item Name cant be empty");
             }
-            else if (itmlist.SelectedValue.ToString() == itm_t.Text)
+            else if (itmlist.GetItemText(itmlist.SelectedItem) == itm_t.Text)
             {
                 MessageBox.Show("This item is not in Records ");
             }
             else
             {
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated Successfully.");
+            }
+            db.closeConnection();
+        }
+
+        private void itmlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String itm = itmlist.GetItemText(itmlist.SelectedItem);
+            itm_t.Text = itm;
+            data db = new data();
+            MySqlCommand cmd = new MySqlCommand("SELECT `Cost` FROM `foodorder` WHERE `ItemName` = '" + itm + "'", db.getConnection());
+            db.openConnection();
+            MySqlDataReader da = cmd.ExecuteReader();
+            while (da.Read())
+            {
+               cst_t.Text = da.GetValue(0).ToString();
             }
             db.closeConnection();
         }

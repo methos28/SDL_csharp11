@@ -44,10 +44,11 @@ namespace SDL_csharp
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl51 = new SDL_csharp.UserControl5();
-            this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl11 = new SDL_csharp.UserControl1();
             this.userControl21 = new SDL_csharp.UserControl2();
+            this.userControl41 = new SDL_csharp.UserControl4();
+            this.userControl51 = new SDL_csharp.UserControl5();
+            this.userControl31 = new SDL_csharp.UserControl3();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -167,11 +168,12 @@ namespace SDL_csharp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(-2, -1);
+            this.panel2.Location = new System.Drawing.Point(-1, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(256, 80);
+            this.panel2.Size = new System.Drawing.Size(255, 80);
             this.panel2.TabIndex = 11;
             // 
             // label1
@@ -321,31 +323,16 @@ namespace SDL_csharp
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
-            this.dashboard.Controls.Add(this.userControl21);
-            this.dashboard.Controls.Add(this.userControl51);
             this.dashboard.Controls.Add(this.userControl31);
+            this.dashboard.Controls.Add(this.userControl51);
             this.dashboard.Controls.Add(this.userControl11);
+            this.dashboard.Controls.Add(this.userControl41);
+            this.dashboard.Controls.Add(this.userControl21);
             this.dashboard.Location = new System.Drawing.Point(254, 0);
             this.dashboard.Name = "dashboard";
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
-            // 
-            // userControl51
-            // 
-            this.userControl51.BackColor = System.Drawing.Color.White;
-            this.userControl51.Location = new System.Drawing.Point(0, 0);
-            this.userControl51.Name = "userControl51";
-            this.userControl51.Size = new System.Drawing.Size(590, 450);
-            this.userControl51.TabIndex = 7;
-            // 
-            // userControl31
-            // 
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.Location = new System.Drawing.Point(0, -1);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 5;
             // 
             // userControl11
             // 
@@ -358,10 +345,38 @@ namespace SDL_csharp
             // userControl21
             // 
             this.userControl21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userControl21.Location = new System.Drawing.Point(0, -1);
+            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl21.Location = new System.Drawing.Point(0, 0);
             this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(590, 450);
+            this.userControl21.Size = new System.Drawing.Size(589, 450);
             this.userControl21.TabIndex = 9;
+            // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.userControl41.Location = new System.Drawing.Point(2, -1);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(590, 450);
+            this.userControl41.TabIndex = 10;
+            // 
+            // userControl51
+            // 
+            this.userControl51.BackColor = System.Drawing.Color.White;
+            this.userControl51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl51.Location = new System.Drawing.Point(0, 0);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(590, 450);
+            this.userControl51.TabIndex = 11;
+            // 
+            // userControl31
+            // 
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl31.Location = new System.Drawing.Point(0, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(590, 450);
+            this.userControl31.TabIndex = 12;
             // 
             // contents
             // 
@@ -396,13 +411,14 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2TextBox fillbox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private UserControl3 userControl31;
         private Guna.UI2.WinForms.Guna2TextBox fillbox6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox fillbox7;
         private Guna.UI2.WinForms.Guna2Button abt;
-        private UserControl5 userControl51;
         private UserControl1 userControl11;
         private UserControl2 userControl21;
+        private UserControl3 userControl31;
+        private UserControl5 userControl51;
+        private UserControl4 userControl41;
     }
 }

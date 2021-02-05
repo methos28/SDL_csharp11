@@ -105,6 +105,7 @@ namespace SDL_csharp
             this.itmlist.Name = "itmlist";
             this.itmlist.Size = new System.Drawing.Size(169, 242);
             this.itmlist.TabIndex = 13;
+            this.itmlist.SelectedIndexChanged += new System.EventHandler(this.itmlist_SelectedIndexChanged);
             // 
             // label2
             // 

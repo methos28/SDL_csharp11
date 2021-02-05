@@ -175,7 +175,7 @@ namespace SDL_csharp
 
 
             print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";       
-            print.SubTitle = "Bill No. : " + i.ToString();
+            print.SubTitle = "\r\n Bill No. : \r\n" + i.ToString();
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             print.PageNumbers = true;
             print.PageNumberInHeader = false;

@@ -35,6 +35,7 @@ namespace SDL_csharp
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pictureBox1.Image = global::SDL_csharp.Properties.Resources.Restaurant1;
             this.pictureBox1.Location = new System.Drawing.Point(-28, -60);
             this.pictureBox1.Name = "pictureBox1";
