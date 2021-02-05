@@ -25,7 +25,7 @@ namespace SDL_csharp
             fillbox1.Hide();
             fillbox2.Hide();
             fillbox3.Hide();
-            fillbox4.Hide();
+            fillbox7.Hide();
             fillbox6.Hide();
            
             userControl11.Hide();
@@ -46,7 +46,7 @@ namespace SDL_csharp
             fillbox1.Show(); 
             fillbox2.Hide();
             fillbox3.Hide();
-            fillbox4.Hide();
+            fillbox7.Hide();
             fillbox6.Hide();
             userControl11.Show();
             userControl11.BringToFront();
@@ -66,7 +66,7 @@ namespace SDL_csharp
             fillbox1.Hide();
             fillbox2.Show();
             fillbox3.Hide();
-            fillbox4.Hide();
+            fillbox7.Hide();
             fillbox6.Hide();
             userControl11.Hide();
             userControl21.Show();
@@ -75,42 +75,6 @@ namespace SDL_csharp
 
 
         }
-
-        private void view_b_Click(object sender, EventArgs e)
-        {
-            fillbox1.Hide();
-            fillbox2.Hide();
-            fillbox3.Show();
-            fillbox4.Hide();
-            fillbox6.Hide();
-
-
-        }
-
-        private void search_b_Click(object sender, EventArgs e)
-        {
-            fillbox1.Hide();
-            fillbox2.Hide();
-            fillbox3.Hide();
-            fillbox4.Show();
-            fillbox6.Hide();
-
-
-
-
-        }
-
-        private void delete_Click(object sender, EventArgs e)
-        {
-            fillbox1.Hide();
-            fillbox2.Hide();
-            fillbox3.Hide();
-            fillbox4.Show();
-            fillbox6.Hide();
-
-        }
-
-
 
         private void controlpanel_Load(object sender, EventArgs e)
         {
@@ -133,7 +97,7 @@ namespace SDL_csharp
             fillbox1.Hide();
             fillbox2.Hide();
             fillbox3.Hide();
-            fillbox4.Hide();
+            fillbox7.Hide();
             fillbox6.Show();
             userControl31.Show();
             userControl31.BringToFront();
@@ -148,6 +112,23 @@ namespace SDL_csharp
         private void contents_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void userControl41_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delete_itm_Click(object sender, EventArgs e)
+        {
+            fillbox1.Hide();
+            fillbox2.Hide();
+            fillbox3.Show();
+            fillbox7.Hide();
+            fillbox6.Hide();
+            userControl41.BringToFront();
+            userControl41.Show();
+
         }
     }
 }

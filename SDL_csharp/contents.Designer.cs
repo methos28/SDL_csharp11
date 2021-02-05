@@ -31,19 +31,20 @@ namespace SDL_csharp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contents));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.fillbox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.abt = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.fillbox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.fillbox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.fillbox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.fillbox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.search_b = new Guna.UI2.WinForms.Guna2Button();
             this.order = new Guna.UI2.WinForms.Guna2Button();
-            this.view_b = new Guna.UI2.WinForms.Guna2Button();
+            this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl11 = new SDL_csharp.UserControl1();
@@ -56,22 +57,63 @@ namespace SDL_csharp
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.fillbox7);
+            this.panel1.Controls.Add(this.abt);
             this.panel1.Controls.Add(this.fillbox6);
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.fillbox4);
             this.panel1.Controls.Add(this.fillbox3);
             this.panel1.Controls.Add(this.fillbox2);
             this.panel1.Controls.Add(this.fillbox1);
-            this.panel1.Controls.Add(this.search_b);
             this.panel1.Controls.Add(this.order);
-            this.panel1.Controls.Add(this.view_b);
+            this.panel1.Controls.Add(this.delete_itm);
             this.panel1.Controls.Add(this.add);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 449);
             this.panel1.TabIndex = 0;
+            // 
+            // fillbox7
+            // 
+            this.fillbox7.BorderRadius = 5;
+            this.fillbox7.BorderThickness = 0;
+            this.fillbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fillbox7.DefaultText = "";
+            this.fillbox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.fillbox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.fillbox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fillbox7.DisabledState.Parent = this.fillbox7;
+            this.fillbox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fillbox7.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fillbox7.FocusedState.Parent = this.fillbox7;
+            this.fillbox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fillbox7.HoverState.Parent = this.fillbox7;
+            this.fillbox7.Location = new System.Drawing.Point(-4, 288);
+            this.fillbox7.Name = "fillbox7";
+            this.fillbox7.PasswordChar = '\0';
+            this.fillbox7.PlaceholderText = "";
+            this.fillbox7.SelectedText = "";
+            this.fillbox7.ShadowDecoration.Parent = this.fillbox7;
+            this.fillbox7.Size = new System.Drawing.Size(10, 45);
+            this.fillbox7.TabIndex = 15;
+            // 
+            // abt
+            // 
+            this.abt.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.abt.CheckedState.Parent = this.abt;
+            this.abt.CustomImages.Parent = this.abt;
+            this.abt.FillColor = System.Drawing.Color.Transparent;
+            this.abt.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abt.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.abt.HoverState.Parent = this.abt;
+            this.abt.Location = new System.Drawing.Point(0, 288);
+            this.abt.Name = "abt";
+            this.abt.ShadowDecoration.Parent = this.abt;
+            this.abt.Size = new System.Drawing.Size(253, 45);
+            this.abt.TabIndex = 14;
+            this.abt.Text = "About";
             // 
             // fillbox6
             // 
@@ -139,31 +181,6 @@ namespace SDL_csharp
             this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "Food Counter";
-            // 
-            // fillbox4
-            // 
-            this.fillbox4.BorderRadius = 5;
-            this.fillbox4.BorderThickness = 0;
-            this.fillbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.fillbox4.DefaultText = "";
-            this.fillbox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.fillbox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.fillbox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox4.DisabledState.Parent = this.fillbox4;
-            this.fillbox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox4.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.fillbox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.fillbox4.FocusedState.Parent = this.fillbox4;
-            this.fillbox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.fillbox4.HoverState.Parent = this.fillbox4;
-            this.fillbox4.Location = new System.Drawing.Point(-4, 288);
-            this.fillbox4.Name = "fillbox4";
-            this.fillbox4.PasswordChar = '\0';
-            this.fillbox4.PlaceholderText = "";
-            this.fillbox4.SelectedText = "";
-            this.fillbox4.ShadowDecoration.Parent = this.fillbox4;
-            this.fillbox4.Size = new System.Drawing.Size(10, 45);
-            this.fillbox4.TabIndex = 7;
             // 
             // fillbox3
             // 
@@ -240,24 +257,6 @@ namespace SDL_csharp
             this.fillbox1.Size = new System.Drawing.Size(10, 45);
             this.fillbox1.TabIndex = 0;
             // 
-            // search_b
-            // 
-            this.search_b.BackColor = System.Drawing.Color.Transparent;
-            this.search_b.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.search_b.CheckedState.Parent = this.search_b;
-            this.search_b.CustomImages.Parent = this.search_b;
-            this.search_b.FillColor = System.Drawing.Color.Transparent;
-            this.search_b.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_b.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.search_b.HoverState.Parent = this.search_b;
-            this.search_b.Location = new System.Drawing.Point(0, 288);
-            this.search_b.Name = "search_b";
-            this.search_b.ShadowDecoration.Parent = this.search_b;
-            this.search_b.Size = new System.Drawing.Size(253, 45);
-            this.search_b.TabIndex = 3;
-            this.search_b.Text = "Delete Bill";
-            this.search_b.Click += new System.EventHandler(this.search_b_Click);
-            // 
             // order
             // 
             this.order.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -275,22 +274,22 @@ namespace SDL_csharp
             this.order.Text = "Order Items";
             this.order.Click += new System.EventHandler(this.order_Click);
             // 
-            // view_b
+            // delete_itm
             // 
-            this.view_b.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.view_b.CheckedState.Parent = this.view_b;
-            this.view_b.CustomImages.Parent = this.view_b;
-            this.view_b.FillColor = System.Drawing.Color.Transparent;
-            this.view_b.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.view_b.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.view_b.HoverState.Parent = this.view_b;
-            this.view_b.Location = new System.Drawing.Point(0, 237);
-            this.view_b.Name = "view_b";
-            this.view_b.ShadowDecoration.Parent = this.view_b;
-            this.view_b.Size = new System.Drawing.Size(253, 45);
-            this.view_b.TabIndex = 1;
-            this.view_b.Text = "Delete Item";
-            this.view_b.Click += new System.EventHandler(this.view_b_Click);
+            this.delete_itm.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.delete_itm.CheckedState.Parent = this.delete_itm;
+            this.delete_itm.CustomImages.Parent = this.delete_itm;
+            this.delete_itm.FillColor = System.Drawing.Color.Transparent;
+            this.delete_itm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_itm.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.delete_itm.HoverState.Parent = this.delete_itm;
+            this.delete_itm.Location = new System.Drawing.Point(0, 237);
+            this.delete_itm.Name = "delete_itm";
+            this.delete_itm.ShadowDecoration.Parent = this.delete_itm;
+            this.delete_itm.Size = new System.Drawing.Size(253, 45);
+            this.delete_itm.TabIndex = 1;
+            this.delete_itm.Text = "Delete / Update Item";
+            this.delete_itm.Click += new System.EventHandler(this.delete_itm_Click);
             // 
             // add
             // 
@@ -316,6 +315,7 @@ namespace SDL_csharp
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Controls.Add(this.userControl31);
             this.dashboard.Controls.Add(this.userControl21);
             this.dashboard.Controls.Add(this.userControl11);
@@ -324,6 +324,15 @@ namespace SDL_csharp
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
+            // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.userControl41.Location = new System.Drawing.Point(2, 0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(590, 450);
+            this.userControl41.TabIndex = 6;
+            this.userControl41.Load += new System.EventHandler(this.userControl41_Load);
             // 
             // userControl31
             // 
@@ -376,10 +385,8 @@ namespace SDL_csharp
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Panel dashboard;
         private Guna.UI2.WinForms.Guna2Button add;
-        private Guna.UI2.WinForms.Guna2Button search_b;
         private Guna.UI2.WinForms.Guna2Button order;
-        private Guna.UI2.WinForms.Guna2Button view_b;
-        private Guna.UI2.WinForms.Guna2TextBox fillbox4;
+        private Guna.UI2.WinForms.Guna2Button delete_itm;
         private Guna.UI2.WinForms.Guna2TextBox fillbox3;
         private Guna.UI2.WinForms.Guna2TextBox fillbox2;
         private Guna.UI2.WinForms.Guna2TextBox fillbox1;
@@ -390,5 +397,8 @@ namespace SDL_csharp
         private UserControl2 userControl21;
         private Guna.UI2.WinForms.Guna2TextBox fillbox6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private UserControl4 userControl41;
+        private Guna.UI2.WinForms.Guna2TextBox fillbox7;
+        private Guna.UI2.WinForms.Guna2Button abt;
     }
 }
