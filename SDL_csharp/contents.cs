@@ -138,7 +138,8 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Show();
             fillbox6.Hide();
-
+            userControl51.Show();
+            userControl51.BringToFront();
             
         }
     }

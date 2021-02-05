@@ -128,6 +128,7 @@ namespace SDL_csharp
             this.Controls.Add(this.label2);
             this.Name = "UserControl5";
             this.Size = new System.Drawing.Size(590, 450);
+            this.Load += new System.EventHandler(this.UserControl5_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

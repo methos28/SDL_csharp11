@@ -16,5 +16,10 @@ namespace SDL_csharp
         {
             InitializeComponent();
         }
+
+        private void UserControl5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
