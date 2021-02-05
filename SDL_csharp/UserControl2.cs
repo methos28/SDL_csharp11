@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DGVPrinterHelper;
 using MySql.Data.MySqlClient;
 
 
@@ -115,34 +116,20 @@ namespace SDL_csharp
             //
             //END
 
+
             //
-            //  Adding Values into Local Database using MySql
+            //Grand Total LABLE
             //
-            //String itm = textBox1.Text;
-            //String cst = textBox2.Text;
-            //String tcst = total_t.Text;
-            //String quan = quantity_t.Value.ToString();
-
-            //data db = new data();
-            //MySqlCommand cmd = new MySqlCommand("INSERT INTO `biller`(`ItemName`, `Cost`, `Quantity`, `TotalCost`) VALUES (@item, @price, @qnt, @gp)", db.getConnection());
-
-            //db.openConnection();
-            //cmd.Parameters.Add("@item", MySqlDbType.VarChar).Value = itm;
-            //cmd.Parameters.Add("@qnt", MySqlDbType.VarChar).Value = quan;
-            //cmd.Parameters.Add("@price", MySqlDbType.VarChar).Value = cst;
-            //cmd.Parameters.Add("@gp", MySqlDbType.VarChar).Value = tcst;
-
-            //cmd.ExecuteNonQuery();
-            //db.closeConnection();
-
+            if (quantity_t.Value.ToString() != "" || quantity_t.Value.ToString() != "0")
+            {
+                int total = 0;
+                total = total + int.Parse(total_t.Text);
+                tct.Text = "RS. " + total;
+            }
 
             //
             // END
             //
-
-
-
-
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -165,15 +152,9 @@ namespace SDL_csharp
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            Int64 amt, total;
-            total = 0;
-            for (int i = 0; i < cartbox.Rows.Count; i++)
-            {
-                amt = Convert.ToInt64(cartbox.Rows[i].Cells["Column4"].Value.ToString());
 
-                total = amt + total;
-                tct.Text = total.ToString();
-            }
+
+
         }
 
         private void cartbox_Leave(object sender, EventArgs e)
@@ -183,11 +164,27 @@ namespace SDL_csharp
 
         private void UserControl2_Leave(object sender, EventArgs e)
         {
-            //data db = new data();
-            //MySqlCommand cmd = new MySqlCommand("TRUNCATE ` biller `", db.getConnection());
-            //db.openConnection();
-            //cmd.ExecuteNonQuery();
-            //db.closeConnection();
+
+        }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            DGVPrinter print = new DGVPrinter();
+            int i = 0;
+            i++;
+
+
+            print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";       
+            print.SubTitle = "Bill No. : " + i.ToString();
+            print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            print.PageNumbers = true;
+            print.PageNumberInHeader = false;
+            print.PorportionalColumns = true;
+            print.HeaderCellAlignment = StringAlignment.Near;
+            print.Footer = "Thank You For Choosing US ";
+            print.PrintDataGridView(cartbox);
+            
+            
         }
     }
 }
