@@ -2,7 +2,7 @@
 
  System Requirements :
  
-  - .NET 4.5.2 or Higher Required
+  - .NET 4.7.2 Required
   - 512 MB of RAM or Higher 
   - Disk Space of 100MB
   - Windows 7/8/10
