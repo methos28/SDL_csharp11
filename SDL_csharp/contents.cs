@@ -130,5 +130,16 @@ namespace SDL_csharp
             userControl41.Show();
 
         }
+
+        private void abt_Click(object sender, EventArgs e)
+        {
+            fillbox1.Hide();
+            fillbox2.Hide();
+            fillbox3.Hide();
+            fillbox7.Show();
+            fillbox6.Hide();
+
+            
+        }
     }
 }

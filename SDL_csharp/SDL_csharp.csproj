@@ -166,6 +166,12 @@
     <Compile Include="UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl5.Designer.cs">
+      <DependentUpon>UserControl5.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="contents.resx">
       <DependentUpon>contents.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl5.resx">
+      <DependentUpon>UserControl5.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

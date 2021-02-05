@@ -75,16 +75,14 @@ namespace SDL_csharp
 
         private void edtb_Click(object sender, EventArgs e)
         {
+            String itm_o = itmlist.SelectedValue.ToString();
             String cst = cst_t.Text;
             String itm = itm_t.Text;
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "'", db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "' WHERE ItemName = '"+itm_o+"'" , db.getConnection());
             db.openConnection();
-            if(cst_t.Text == "" || cst_t.Text == "0")
-            {
-                MessageBox.Show("Cost cant be 0/Empty");
-            }
-            else if (itm_t.Text == "")
+
+            if (itm_t.Text == "") 
             {
                 MessageBox.Show("Item Name cant be empty");
             }

@@ -48,6 +48,7 @@ namespace SDL_csharp
             this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl11 = new SDL_csharp.UserControl1();
+            this.userControl51 = new SDL_csharp.UserControl5();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -114,6 +115,7 @@ namespace SDL_csharp
             this.abt.Size = new System.Drawing.Size(253, 45);
             this.abt.TabIndex = 14;
             this.abt.Text = "About";
+            this.abt.Click += new System.EventHandler(this.abt_Click);
             // 
             // fillbox6
             // 
@@ -315,6 +317,7 @@ namespace SDL_csharp
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dashboard.Controls.Add(this.userControl51);
             this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Controls.Add(this.userControl31);
             this.dashboard.Controls.Add(this.userControl21);
@@ -359,6 +362,14 @@ namespace SDL_csharp
             this.userControl11.Size = new System.Drawing.Size(590, 450);
             this.userControl11.TabIndex = 3;
             // 
+            // userControl51
+            // 
+            this.userControl51.BackColor = System.Drawing.Color.White;
+            this.userControl51.Location = new System.Drawing.Point(3, -1);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(590, 450);
+            this.userControl51.TabIndex = 7;
+            // 
             // contents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,5 +411,6 @@ namespace SDL_csharp
         private UserControl4 userControl41;
         private Guna.UI2.WinForms.Guna2TextBox fillbox7;
         private Guna.UI2.WinForms.Guna2Button abt;
+        private UserControl5 userControl51;
     }
 }
