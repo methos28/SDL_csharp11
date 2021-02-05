@@ -39,6 +39,8 @@ namespace SDL_csharp
             this.label3 = new System.Windows.Forms.Label();
             this.edtb = new Guna.UI2.WinForms.Guna2Button();
             this.rmvb = new Guna.UI2.WinForms.Guna2Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@ namespace SDL_csharp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(34, 133);
+            this.label1.Location = new System.Drawing.Point(42, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 21);
             this.label1.TabIndex = 0;
@@ -74,7 +76,7 @@ namespace SDL_csharp
             "Deserts",
             "Softdrinks"});
             this.cate_UC.ItemsAppearance.Parent = this.cate_UC;
-            this.cate_UC.Location = new System.Drawing.Point(38, 68);
+            this.cate_UC.Location = new System.Drawing.Point(46, 50);
             this.cate_UC.Name = "cate_UC";
             this.cate_UC.ShadowDecoration.Parent = this.cate_UC;
             this.cate_UC.Size = new System.Drawing.Size(169, 36);
@@ -86,7 +88,7 @@ namespace SDL_csharp
             this.cat_combo.AutoSize = true;
             this.cat_combo.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.cat_combo.ForeColor = System.Drawing.Color.White;
-            this.cat_combo.Location = new System.Drawing.Point(34, 41);
+            this.cat_combo.Location = new System.Drawing.Point(42, 23);
             this.cat_combo.Name = "cat_combo";
             this.cat_combo.Size = new System.Drawing.Size(87, 20);
             this.cat_combo.TabIndex = 11;
@@ -97,7 +99,7 @@ namespace SDL_csharp
             this.itmlist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itmlist.FormattingEnabled = true;
             this.itmlist.ItemHeight = 20;
-            this.itmlist.Location = new System.Drawing.Point(38, 167);
+            this.itmlist.Location = new System.Drawing.Point(46, 126);
             this.itmlist.Name = "itmlist";
             this.itmlist.Size = new System.Drawing.Size(169, 244);
             this.itmlist.TabIndex = 13;
@@ -107,7 +109,7 @@ namespace SDL_csharp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(337, 41);
+            this.label2.Location = new System.Drawing.Point(345, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 21);
             this.label2.TabIndex = 14;
@@ -127,7 +129,7 @@ namespace SDL_csharp
             this.itm_t.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itm_t.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.itm_t.HoverState.Parent = this.itm_t;
-            this.itm_t.Location = new System.Drawing.Point(341, 67);
+            this.itm_t.Location = new System.Drawing.Point(349, 49);
             this.itm_t.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.itm_t.Name = "itm_t";
             this.itm_t.PasswordChar = '\0';
@@ -151,8 +153,8 @@ namespace SDL_csharp
             this.cst_t.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cst_t.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cst_t.HoverState.Parent = this.cst_t;
-            this.cst_t.Location = new System.Drawing.Point(341, 167);
-            this.cst_t.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cst_t.Location = new System.Drawing.Point(349, 149);
+            this.cst_t.Margin = new System.Windows.Forms.Padding(5);
             this.cst_t.Name = "cst_t";
             this.cst_t.PasswordChar = '\0';
             this.cst_t.PlaceholderText = "";
@@ -166,7 +168,7 @@ namespace SDL_csharp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(337, 139);
+            this.label3.Location = new System.Drawing.Point(345, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 21);
             this.label3.TabIndex = 16;
@@ -179,7 +181,7 @@ namespace SDL_csharp
             this.edtb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edtb.ForeColor = System.Drawing.Color.White;
             this.edtb.HoverState.Parent = this.edtb;
-            this.edtb.Location = new System.Drawing.Point(341, 248);
+            this.edtb.Location = new System.Drawing.Point(349, 388);
             this.edtb.Name = "edtb";
             this.edtb.ShadowDecoration.Parent = this.edtb;
             this.edtb.Size = new System.Drawing.Size(200, 45);
@@ -194,7 +196,7 @@ namespace SDL_csharp
             this.rmvb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rmvb.ForeColor = System.Drawing.Color.White;
             this.rmvb.HoverState.Parent = this.rmvb;
-            this.rmvb.Location = new System.Drawing.Point(341, 334);
+            this.rmvb.Location = new System.Drawing.Point(46, 388);
             this.rmvb.Name = "rmvb";
             this.rmvb.ShadowDecoration.Parent = this.rmvb;
             this.rmvb.Size = new System.Drawing.Size(200, 45);
@@ -202,11 +204,48 @@ namespace SDL_csharp
             this.rmvb.Text = "Remove";
             this.rmvb.Click += new System.EventHandler(this.rmvb_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(345, 222);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 20);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Category :";
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(349, 253);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox1.TabIndex = 21;
+            // 
             // UserControl4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.rmvb);
             this.Controls.Add(this.edtb);
             this.Controls.Add(this.cst_t);
@@ -236,5 +275,7 @@ namespace SDL_csharp
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button edtb;
         private Guna.UI2.WinForms.Guna2Button rmvb;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

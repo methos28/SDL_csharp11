@@ -44,11 +44,11 @@ namespace SDL_csharp
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl11 = new SDL_csharp.UserControl1();
-            this.userControl51 = new SDL_csharp.UserControl5();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -328,6 +328,14 @@ namespace SDL_csharp
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
             // 
+            // userControl51
+            // 
+            this.userControl51.BackColor = System.Drawing.Color.White;
+            this.userControl51.Location = new System.Drawing.Point(2, -1);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(590, 450);
+            this.userControl51.TabIndex = 7;
+            // 
             // userControl41
             // 
             this.userControl41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -361,14 +369,6 @@ namespace SDL_csharp
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(590, 450);
             this.userControl11.TabIndex = 3;
-            // 
-            // userControl51
-            // 
-            this.userControl51.BackColor = System.Drawing.Color.White;
-            this.userControl51.Location = new System.Drawing.Point(3, -1);
-            this.userControl51.Name = "userControl51";
-            this.userControl51.Size = new System.Drawing.Size(590, 450);
-            this.userControl51.TabIndex = 7;
             // 
             // contents
             // 

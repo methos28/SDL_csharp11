@@ -31,6 +31,8 @@ namespace SDL_csharp
             userControl11.Hide();
             userControl21.Hide();
             userControl31.Show();
+            userControl41.Hide();
+            userControl51.Hide();
             
          
 
