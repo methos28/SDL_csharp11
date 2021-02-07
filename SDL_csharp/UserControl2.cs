@@ -22,7 +22,8 @@ namespace SDL_csharp
 
         }
 
-
+        //
+        // Showing Values to According Listbox using MySQL database
         private void cate_UC_SelectedIndexChanged(object sender, EventArgs e)
         {
             String name = cate_UC.Text;
@@ -37,7 +38,11 @@ namespace SDL_csharp
             listBox1.DisplayMember = "Itemname";
             db.closeConnection();
         }
+        //
+        //END
 
+        //
+        // Reading and showing the Cost of Selected ITEM directly from the Mysql DATABASE
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             quantity_t.ResetText();
@@ -58,23 +63,29 @@ namespace SDL_csharp
 
         }
 
+        //
+        //END
+
         private void UserControl2_Load(object sender, EventArgs e)
         {
 
         }
 
+
+        // Changing TOTAL COST according to Quantity
+        //
         private void quantity_t_ValueChanged(object sender, EventArgs e)
         {
-            // Changing TOTAL COST according to Quantity
-            //
+
             int q = int.Parse(quantity_t.Value.ToString());
             int tcost = int.Parse(textBox2.Text);
 
             total_t.Text = (q * tcost).ToString();
-
-            // END
-            //
         }
+
+        // END
+        //
+
 
         private void quantity_t_Leave(object sender, EventArgs e)
         {
@@ -119,6 +130,14 @@ namespace SDL_csharp
             //Grand Total LABLE
             //
            
+            if(tct.Text != "" || tct.Text != "0")
+            {
+                int ttl = int.Parse(total_t.Text);
+                total = total + ttl;
+                tct.Text = "Rs. " + total;
+
+            }
+
             //
             // END
             //
@@ -149,20 +168,7 @@ namespace SDL_csharp
             tct.Text = "Rs. "+total;
             }
         }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
+ 
         private void cartbox_Leave(object sender, EventArgs e)
         {
             
@@ -195,7 +201,14 @@ namespace SDL_csharp
         
         private void cartbox_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            amt = int.Parse(cartbox.Rows[e.RowIndex].Cells[3].Value.ToString());
+            try
+            {
+                amt = int.Parse(cartbox.Rows[e.RowIndex].Cells[3].Value.ToString());
+            }
+            catch
+            {
+                MessageBox.Show("Nothing to select ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

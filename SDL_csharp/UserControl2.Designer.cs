@@ -120,6 +120,7 @@ namespace SDL_csharp
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.textBox1.Location = new System.Drawing.Point(3, 33);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -158,6 +159,7 @@ namespace SDL_csharp
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.textBox2.Location = new System.Drawing.Point(255, 34);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
