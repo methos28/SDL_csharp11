@@ -40,7 +40,7 @@ namespace SDL_csharp
             this.edtb = new Guna.UI2.WinForms.Guna2Button();
             this.rmvb = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cate_edt = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -57,6 +57,7 @@ namespace SDL_csharp
             // cate_UC
             // 
             this.cate_UC.BackColor = System.Drawing.Color.Transparent;
+            this.cate_UC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.cate_UC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cate_UC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cate_UC.FocusedColor = System.Drawing.Color.Empty;
@@ -230,38 +231,41 @@ namespace SDL_csharp
             this.label4.TabIndex = 20;
             this.label4.Text = "Category :";
             // 
-            // guna2TextBox1
+            // cate_edt
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(349, 253);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 21;
+            this.cate_edt.BackColor = System.Drawing.Color.Transparent;
+            this.cate_edt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.cate_edt.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cate_edt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cate_edt.FocusedColor = System.Drawing.Color.Empty;
+            this.cate_edt.FocusedState.Parent = this.cate_edt;
+            this.cate_edt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cate_edt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.cate_edt.FormattingEnabled = true;
+            this.cate_edt.HoverState.Parent = this.cate_edt;
+            this.cate_edt.ItemHeight = 30;
+            this.cate_edt.Items.AddRange(new object[] {
+            "South Indian",
+            "Punjabi",
+            "Mexican",
+            "American",
+            "Italian",
+            "Chinese",
+            "Deserts",
+            "Softdrinks"});
+            this.cate_edt.ItemsAppearance.Parent = this.cate_edt;
+            this.cate_edt.Location = new System.Drawing.Point(349, 254);
+            this.cate_edt.Name = "cate_edt";
+            this.cate_edt.ShadowDecoration.Parent = this.cate_edt;
+            this.cate_edt.Size = new System.Drawing.Size(200, 36);
+            this.cate_edt.TabIndex = 21;
             // 
             // UserControl4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.cate_edt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rmvb);
             this.Controls.Add(this.edtb);
@@ -276,6 +280,7 @@ namespace SDL_csharp
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.Name = "UserControl4";
             this.Size = new System.Drawing.Size(590, 450);
+            this.Load += new System.EventHandler(this.UserControl4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,6 +299,6 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2Button edtb;
         private Guna.UI2.WinForms.Guna2Button rmvb;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cate_edt;
     }
 }

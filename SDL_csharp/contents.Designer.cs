@@ -44,11 +44,11 @@ namespace SDL_csharp
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl11 = new SDL_csharp.UserControl1();
-            this.userControl21 = new SDL_csharp.UserControl2();
-            this.userControl41 = new SDL_csharp.UserControl4();
-            this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl31 = new SDL_csharp.UserControl3();
+            this.userControl51 = new SDL_csharp.UserControl5();
+            this.userControl11 = new SDL_csharp.UserControl1();
+            this.userControl41 = new SDL_csharp.UserControl4();
+            this.userControl21 = new SDL_csharp.UserControl2();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -77,6 +77,7 @@ namespace SDL_csharp
             // 
             // fillbox7
             // 
+            this.fillbox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.fillbox7.BorderRadius = 5;
             this.fillbox7.BorderThickness = 0;
             this.fillbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -103,6 +104,7 @@ namespace SDL_csharp
             // 
             // abt
             // 
+            this.abt.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.abt.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.abt.CheckedState.Parent = this.abt;
             this.abt.CustomImages.Parent = this.abt;
@@ -120,6 +122,7 @@ namespace SDL_csharp
             // 
             // fillbox6
             // 
+            this.fillbox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.fillbox6.BorderRadius = 5;
             this.fillbox6.BorderThickness = 0;
             this.fillbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -147,6 +150,7 @@ namespace SDL_csharp
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Button1.BackColor = System.Drawing.SystemColors.Window;
             this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
@@ -189,6 +193,7 @@ namespace SDL_csharp
             // 
             // fillbox3
             // 
+            this.fillbox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.fillbox3.BorderRadius = 5;
             this.fillbox3.BorderThickness = 0;
             this.fillbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -215,6 +220,7 @@ namespace SDL_csharp
             // 
             // fillbox2
             // 
+            this.fillbox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.fillbox2.BorderRadius = 5;
             this.fillbox2.BorderThickness = 0;
             this.fillbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -241,6 +247,7 @@ namespace SDL_csharp
             // 
             // fillbox1
             // 
+            this.fillbox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.fillbox1.BorderRadius = 5;
             this.fillbox1.BorderThickness = 0;
             this.fillbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -267,6 +274,7 @@ namespace SDL_csharp
             // 
             // order
             // 
+            this.order.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.order.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.order.CheckedState.Parent = this.order;
             this.order.CustomImages.Parent = this.order;
@@ -284,6 +292,7 @@ namespace SDL_csharp
             // 
             // delete_itm
             // 
+            this.delete_itm.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.delete_itm.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.delete_itm.CheckedState.Parent = this.delete_itm;
             this.delete_itm.CustomImages.Parent = this.delete_itm;
@@ -301,6 +310,7 @@ namespace SDL_csharp
             // 
             // add
             // 
+            this.add.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.add.BackColor = System.Drawing.SystemColors.Window;
             this.add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.add.BorderColor = System.Drawing.Color.Transparent;
@@ -334,31 +344,16 @@ namespace SDL_csharp
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
             // 
-            // userControl11
+            // userControl31
             // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.Control;
-            this.userControl11.Location = new System.Drawing.Point(2, 0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(590, 450);
-            this.userControl11.TabIndex = 8;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl21.Location = new System.Drawing.Point(0, 0);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(589, 450);
-            this.userControl21.TabIndex = 9;
-            // 
-            // userControl41
-            // 
-            this.userControl41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.userControl41.Location = new System.Drawing.Point(2, -1);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(590, 450);
-            this.userControl41.TabIndex = 10;
+            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl31.Location = new System.Drawing.Point(0, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(590, 450);
+            this.userControl31.TabIndex = 12;
             // 
             // userControl51
             // 
@@ -369,14 +364,31 @@ namespace SDL_csharp
             this.userControl51.Size = new System.Drawing.Size(590, 450);
             this.userControl51.TabIndex = 11;
             // 
-            // userControl31
+            // userControl11
             // 
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(0, 0);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
+            this.userControl11.BackColor = System.Drawing.SystemColors.Control;
+            this.userControl11.Location = new System.Drawing.Point(2, 0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(590, 450);
+            this.userControl11.TabIndex = 8;
+            // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.userControl41.Location = new System.Drawing.Point(2, -1);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(590, 450);
+            this.userControl41.TabIndex = 10;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl21.Location = new System.Drawing.Point(0, 0);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(589, 450);
+            this.userControl21.TabIndex = 9;
             // 
             // contents
             // 

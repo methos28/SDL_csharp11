@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DGVPrinterHelper;
+using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DGVPrinterHelper;
-using MySql.Data.MySqlClient;
 
 
 namespace SDL_csharp
@@ -19,7 +14,9 @@ namespace SDL_csharp
         {
             InitializeComponent();
         }
-
+        int amt;
+        int total = 0;
+        int i = 0;
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -93,15 +90,15 @@ namespace SDL_csharp
             //
             if (quantity_t.Text == "" || quantity_t.Text == "0")
             {
-                MessageBox.Show(" Cart Quantity cant be Empty/0 ");
+                MessageBox.Show(" Cart Quantity cant be Empty/0 ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (total_t.Text == "")
             {
-                MessageBox.Show(" You Havent Selected anything ");
+                MessageBox.Show(" You Havent Selected anything ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (textBox1.Text == "")
             {
-                MessageBox.Show(" You Havent Selected anything ");
+                MessageBox.Show(" You Havent Selected anything ","Info" ,MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -111,6 +108,7 @@ namespace SDL_csharp
                 cartbox.Rows[r].Cells[1].Value = textBox2.Text;
                 cartbox.Rows[r].Cells[2].Value = quantity_t.Text;
                 cartbox.Rows[r].Cells[3].Value = total_t.Text;
+
             }
             //
             //
@@ -120,13 +118,7 @@ namespace SDL_csharp
             //
             //Grand Total LABLE
             //
-            if (quantity_t.Value.ToString() != "" || quantity_t.Value.ToString() != "0")
-            {
-                int total = 0;
-                total = total + int.Parse(total_t.Text);
-                tct.Text = "RS. " + total;
-            }
-
+           
             //
             // END
             //
@@ -141,7 +133,21 @@ namespace SDL_csharp
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             //Removing Rows on REMOVE BUTTON CLICK
-            cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
+
+            try
+            {
+                cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
+
+            }
+            catch
+            {
+                MessageBox.Show("Unexpected Error", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if(tct.Text != "" || tct.Text != "0")
+            {
+            total = total - amt;
+            tct.Text = "Rs. "+total;
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -159,7 +165,7 @@ namespace SDL_csharp
 
         private void cartbox_Leave(object sender, EventArgs e)
         {
-
+            
         }
 
         private void UserControl2_Leave(object sender, EventArgs e)
@@ -170,21 +176,26 @@ namespace SDL_csharp
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             DGVPrinter print = new DGVPrinter();
-            int i = 0;
+            
             i++;
 
 
             print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";       
-            print.SubTitle = "\r\n Bill No. : \r\n" + i.ToString();
+            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n";
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             print.PageNumbers = true;
             print.PageNumberInHeader = false;
             print.PorportionalColumns = true;
             print.HeaderCellAlignment = StringAlignment.Near;
-            print.Footer = "Thank You For Choosing US ";
+            print.Footer = "Grand Total is :"+tct.Text+"\r\nThank You For Choosing US ";
             print.PrintDataGridView(cartbox);
             
             
+        }
+        
+        private void cartbox_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            amt = int.Parse(cartbox.Rows[e.RowIndex].Cells[3].Value.ToString());
         }
     }
 }

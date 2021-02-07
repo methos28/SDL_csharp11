@@ -42,20 +42,20 @@ namespace SDL_csharp
             db.openConnection();
             if (cate_UC.Text == "")
             {
-                MessageBox.Show("You need to select Category First.");
+                MessageBox.Show("You need to select Category First.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (item == "")
             {
-                MessageBox.Show("Select An Item To DELETE from the List.");
+                MessageBox.Show("Select An Item To DELETE from the List.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if(item != itmlist.GetItemText(itmlist.SelectedItem))
             {
-                MessageBox.Show("Do not Edit the Item name.");
+                MessageBox.Show("Do not Edit the Item name.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Successfully.");
+                MessageBox.Show("Deleted Successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             db.closeConnection();
 
@@ -65,23 +65,29 @@ namespace SDL_csharp
         {
             
             String cst = cst_t.Text;
+            String item = itmlist.GetItemText(itmlist.SelectedItem);
             String itm = itm_t.Text;
+            String cat_edt = cate_edt.Text;
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "' WHERE ItemName = '"+ itm +"'" , db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "',`Catagory ` = '"+ cat_edt +"' WHERE ItemName = '" + item +"'" , db.getConnection());
             db.openConnection();
 
             if (itm_t.Text == "") 
             {
-                MessageBox.Show("Item Name cant be empty");
+                MessageBox.Show("Item Name cant be empty", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (itmlist.GetItemText(itmlist.SelectedItem) == itm_t.Text)
             {
-                MessageBox.Show("This item is not in Records ");
+                MessageBox.Show("This item is not in Records ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (cmd.ExecuteNonQuery() == 1)
+            {
+                
+                MessageBox.Show("Updated Successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Updated Successfully.");
+                MessageBox.Show("Unexpected Error","Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             db.closeConnection();
         }
@@ -91,14 +97,20 @@ namespace SDL_csharp
             String itm = itmlist.GetItemText(itmlist.SelectedItem);
             itm_t.Text = itm;
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("SELECT `Cost` FROM `foodorder` WHERE `ItemName` = '" + itm + "'", db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("SELECT `Catagory`, `Cost` FROM `foodorder` WHERE `ItemName` = '" + itm + "'", db.getConnection());
             db.openConnection();
             MySqlDataReader da = cmd.ExecuteReader();
             while (da.Read())
             {
-               cst_t.Text = da.GetValue(0).ToString();
+               cst_t.Text = da.GetValue(1).ToString();
+               cate_edt.Text = da.GetValue(0).ToString();
             }
             db.closeConnection();
+        }
+
+        private void UserControl4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
