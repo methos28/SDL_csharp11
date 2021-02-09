@@ -191,7 +191,7 @@ namespace SDL_csharp
 
 
             print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
-            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("mm/dd/yyyy") + "\r\n Time : "+DateTime.Now.TimeOfDay.ToString();
+            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : "+DateTime.Now.TimeOfDay.ToString();
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             print.PageNumbers = true;
             print.PageNumberInHeader = false;
