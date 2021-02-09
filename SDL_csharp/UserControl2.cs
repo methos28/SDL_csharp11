@@ -76,11 +76,15 @@ namespace SDL_csharp
         //
         private void quantity_t_ValueChanged(object sender, EventArgs e)
         {
+            if (textBox1.Text != "")
+            {
 
+            
             int q = int.Parse(quantity_t.Value.ToString());
             int tcost = int.Parse(textBox2.Text);
 
             total_t.Text = (q * tcost).ToString();
+            }
         }
 
         // END
@@ -130,7 +134,7 @@ namespace SDL_csharp
             //Grand Total LABLE
             //
            
-            if(tct.Text != "" || tct.Text != "0")
+            if(total_t.Text != "" || total_t.Text != "0")
             {
                 int ttl = int.Parse(total_t.Text);
                 total = total + ttl;
@@ -186,8 +190,8 @@ namespace SDL_csharp
             i++;
 
 
-            print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";       
-            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n";
+            print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
+            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("mm/dd/yyyy") + "\r\n Time : "+DateTime.Now.TimeOfDay.ToString();
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             print.PageNumbers = true;
             print.PageNumberInHeader = false;

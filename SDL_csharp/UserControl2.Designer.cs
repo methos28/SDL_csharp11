@@ -182,6 +182,7 @@ namespace SDL_csharp
             this.quantity_t.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantity_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.quantity_t.Location = new System.Drawing.Point(3, 105);
+            this.quantity_t.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantity_t.Name = "quantity_t";
             this.quantity_t.ShadowDecoration.Parent = this.quantity_t;
             this.quantity_t.Size = new System.Drawing.Size(141, 34);
@@ -214,6 +215,7 @@ namespace SDL_csharp
             this.cate_UC.HoverState.Parent = this.cate_UC;
             this.cate_UC.ItemHeight = 30;
             this.cate_UC.Items.AddRange(new object[] {
+            "Starters",
             "South Indian",
             "Punjabi",
             "Mexican",

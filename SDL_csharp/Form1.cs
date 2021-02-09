@@ -61,7 +61,7 @@ namespace SDL_csharp
             }
             else
             {
-                MessageBox.Show("Incorrect Username or Password");
+                MessageBox.Show("Incorrect Username or Password","info", MessageBoxButtons.OK , MessageBoxIcon.Error);
             }
 
 

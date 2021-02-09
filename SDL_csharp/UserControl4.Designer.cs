@@ -68,6 +68,7 @@ namespace SDL_csharp
             this.cate_UC.HoverState.Parent = this.cate_UC;
             this.cate_UC.ItemHeight = 30;
             this.cate_UC.Items.AddRange(new object[] {
+            "Starters",
             "South Indian",
             "Punjabi",
             "Mexican",
@@ -245,6 +246,7 @@ namespace SDL_csharp
             this.cate_edt.HoverState.Parent = this.cate_edt;
             this.cate_edt.ItemHeight = 30;
             this.cate_edt.Items.AddRange(new object[] {
+            "Starters",
             "South Indian",
             "Punjabi",
             "Mexican",

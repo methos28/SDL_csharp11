@@ -108,6 +108,7 @@ namespace SDL_csharp
             this.combo_t.HoverState.Parent = this.combo_t;
             this.combo_t.ItemHeight = 30;
             this.combo_t.Items.AddRange(new object[] {
+            "Starters",
             "South Indian",
             "Punjabi",
             "Mexican",
