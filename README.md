@@ -7,7 +7,7 @@
   - Disk Space of 100MB
   - Windows 7/8/10
   - Intel Dual Core 2.5GHz / AMD Athlon 64 x2 Dual Core 2.9 GHz
-  - XAMPP Control Panel
+  - XAMPP Control Panel (https://sourceforge.net/projects/xampp/)
   - C# .NET winforms Module along with Visual Studio.
   
  
