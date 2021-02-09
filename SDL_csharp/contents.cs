@@ -144,5 +144,12 @@ namespace SDL_csharp
             userControl51.BringToFront();
             
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 frm = new Form1();
+            frm.Show();
+        }
     }
 }

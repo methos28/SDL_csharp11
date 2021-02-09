@@ -49,6 +49,7 @@ namespace SDL_csharp
             this.userControl11 = new SDL_csharp.UserControl1();
             this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -58,6 +59,7 @@ namespace SDL_csharp
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.fillbox7);
             this.panel1.Controls.Add(this.abt);
             this.panel1.Controls.Add(this.fillbox6);
@@ -390,6 +392,28 @@ namespace SDL_csharp
             this.userControl21.Size = new System.Drawing.Size(589, 450);
             this.userControl21.TabIndex = 9;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2Button2.BackColor = System.Drawing.SystemColors.Window;
+            this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(-1, 391);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(253, 45);
+            this.guna2Button2.TabIndex = 17;
+            this.guna2Button2.Text = "Log Out";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // contents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,5 +456,6 @@ namespace SDL_csharp
         private UserControl3 userControl31;
         private UserControl5 userControl51;
         private UserControl4 userControl41;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

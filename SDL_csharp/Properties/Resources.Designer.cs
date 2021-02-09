@@ -93,6 +93,16 @@ namespace SDL_csharp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cloud_computing {
+            get {
+                object obj = ResourceManager.GetObject("cloud-computing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cloud_computing_2 {
             get {
                 object obj = ResourceManager.GetObject("cloud-computing-2", resourceCulture);

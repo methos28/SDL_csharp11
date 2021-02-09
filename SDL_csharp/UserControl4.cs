@@ -69,16 +69,12 @@ namespace SDL_csharp
             String itm = itm_t.Text;
             String cat_edt = cate_edt.Text;
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`='" + itm +"',`Cost`='" + cst + "',`Catagory ` = '"+ cat_edt +"' WHERE ItemName = '" + item +"'" , db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("UPDATE `foodorder` SET `ItemName`= '" + itm + "' ,`Catagory`='"+ cat_edt +"',`Cost`='"+ cst +"' WHERE `ItemName` = '"+ item +"'", db.getConnection());
             db.openConnection();
 
             if (itm_t.Text == "") 
             {
                 MessageBox.Show("Item Name cant be empty", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (itmlist.GetItemText(itmlist.SelectedItem) == itm_t.Text)
-            {
-                MessageBox.Show("This item is not in Records ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (cmd.ExecuteNonQuery() == 1)
             {
