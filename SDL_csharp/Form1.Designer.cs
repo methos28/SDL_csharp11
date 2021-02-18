@@ -46,6 +46,7 @@ namespace SDL_csharp
             this.button1 = new System.Windows.Forms.Button();
             this.sgnup1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.login_type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -121,7 +122,7 @@ namespace SDL_csharp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 185);
+            this.label6.Location = new System.Drawing.Point(27, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 17);
             this.label6.TabIndex = 4;
@@ -139,7 +140,7 @@ namespace SDL_csharp
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
-            this.richTextBox2.Location = new System.Drawing.Point(30, 220);
+            this.richTextBox2.Location = new System.Drawing.Point(30, 206);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(232, 2);
             this.richTextBox2.TabIndex = 6;
@@ -158,7 +159,7 @@ namespace SDL_csharp
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(30, 205);
+            this.textBox2.Location = new System.Drawing.Point(30, 191);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(232, 16);
             this.textBox2.TabIndex = 8;
@@ -203,6 +204,30 @@ namespace SDL_csharp
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
+            // login_type
+            // 
+            this.login_type.BackColor = System.Drawing.Color.Transparent;
+            this.login_type.BorderColor = System.Drawing.Color.Black;
+            this.login_type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.login_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.login_type.FocusedColor = System.Drawing.Color.Empty;
+            this.login_type.FocusedState.Parent = this.login_type;
+            this.login_type.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.login_type.FormattingEnabled = true;
+            this.login_type.HoverState.Parent = this.login_type;
+            this.login_type.ItemHeight = 30;
+            this.login_type.Items.AddRange(new object[] {
+            "Admin",
+            "Employee"});
+            this.login_type.ItemsAppearance.Parent = this.login_type;
+            this.login_type.Location = new System.Drawing.Point(30, 224);
+            this.login_type.Name = "login_type";
+            this.login_type.ShadowDecoration.Parent = this.login_type;
+            this.login_type.Size = new System.Drawing.Size(232, 36);
+            this.login_type.TabIndex = 12;
+            this.login_type.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +235,7 @@ namespace SDL_csharp
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 353);
+            this.Controls.Add(this.login_type);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.sgnup1);
             this.Controls.Add(this.button1);
@@ -254,6 +280,7 @@ namespace SDL_csharp
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button sgnup1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox login_type;
     }
 }
 

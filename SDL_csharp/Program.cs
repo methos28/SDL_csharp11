@@ -17,6 +17,8 @@ namespace SDL_csharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            int ch = 0;
         }
     }
 }

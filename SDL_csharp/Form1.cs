@@ -40,6 +40,7 @@ namespace SDL_csharp
             String username = textBox1.Text;
             String password = textBox2.Text;
             contents contents = new contents();
+            String login = login_type.GetItemText(login_type.SelectedItem);
 
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -47,21 +48,20 @@ namespace SDL_csharp
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = password;
+            
 
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-            {
-                contents.Show();
+            { 
                 this.Hide();
+                contents.Show();
 
-                
-                
             }
             else
             {
-                MessageBox.Show("Incorrect Username or Password","info", MessageBoxButtons.OK , MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect Username or Password","Info", MessageBoxButtons.OK , MessageBoxIcon.Error);
             }
 
 
@@ -81,6 +81,11 @@ namespace SDL_csharp
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
