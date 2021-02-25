@@ -226,7 +226,7 @@ namespace SDL_csharp
             this.login_type.ShadowDecoration.Parent = this.login_type;
             this.login_type.Size = new System.Drawing.Size(232, 36);
             this.login_type.TabIndex = 12;
-            this.login_type.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.login_type.SelectedIndexChanged += new System.EventHandler(this.login_type_SelectedIndexChanged);
             // 
             // Form1
             // 

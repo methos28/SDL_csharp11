@@ -17,6 +17,8 @@ namespace SDL_csharp
     {
         contents cont = new contents();
 
+        String i;
+        
         public Form1()
         {
             InitializeComponent();
@@ -53,10 +55,21 @@ namespace SDL_csharp
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
 
+            employee emp = new employee();
+            i = login_type.GetItemText(login_type.SelectedText);
+
             if (table.Rows.Count > 0)
             { 
-                this.Hide();
-                contents.Show();
+                if (i == "Admin")
+                {
+                    this.Hide();
+                    contents.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    emp.Show();
+                }
 
             }
             else
@@ -83,9 +96,9 @@ namespace SDL_csharp
             Application.Exit();
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void login_type_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
