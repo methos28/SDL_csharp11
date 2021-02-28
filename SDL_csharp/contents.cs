@@ -27,12 +27,14 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Hide();
             fillbox6.Hide();
-           
+            fillbox4.Hide();
+
             userControl11.Hide();
             userControl21.Hide();
             userControl31.Show();
             userControl41.Hide();
             userControl51.Hide();
+            userControl61.Hide();
             
          
 
@@ -50,6 +52,7 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Hide();
             fillbox6.Hide();
+            fillbox4.Hide();
             userControl11.Show();
             userControl11.BringToFront();
 
@@ -70,6 +73,7 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Hide();
             fillbox6.Hide();
+            fillbox4.Hide();
             userControl11.Hide();
             userControl21.Show();
             userControl21.BringToFront();
@@ -101,6 +105,7 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Hide();
             fillbox6.Show();
+            fillbox4.Hide();
             userControl31.Show();
             userControl31.BringToFront();
 
@@ -128,6 +133,7 @@ namespace SDL_csharp
             fillbox3.Show();
             fillbox7.Hide();
             fillbox6.Hide();
+            fillbox4.Hide();
             userControl41.BringToFront();
             userControl41.Show();
 
@@ -140,6 +146,7 @@ namespace SDL_csharp
             fillbox3.Hide();
             fillbox7.Show();
             fillbox6.Hide();
+            fillbox4.Hide();
             userControl51.Show();
             userControl51.BringToFront();
             
@@ -150,6 +157,21 @@ namespace SDL_csharp
             this.Hide();
             Form1 frm = new Form1();
             frm.Show();
+        }
+
+        private void add_emp_Click(object sender, EventArgs e)
+        {
+
+            fillbox1.Hide();
+            fillbox2.Hide();
+            fillbox3.Hide();
+            fillbox7.Hide();
+            fillbox4.Show();
+            fillbox6.Hide();
+            userControl61.Show();
+            userControl61.BringToFront();
+            
+
         }
     }
 }

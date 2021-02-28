@@ -31,6 +31,9 @@ namespace SDL_csharp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contents));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.fillbox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.add_emp = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.abt = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox6 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,7 +52,7 @@ namespace SDL_csharp
             this.userControl11 = new SDL_csharp.UserControl1();
             this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.userControl61 = new SDL_csharp.UserControl6();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -59,6 +62,8 @@ namespace SDL_csharp
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.fillbox4);
+            this.panel1.Controls.Add(this.add_emp);
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.fillbox7);
             this.panel1.Controls.Add(this.abt);
@@ -77,6 +82,73 @@ namespace SDL_csharp
             this.panel1.Size = new System.Drawing.Size(256, 449);
             this.panel1.TabIndex = 0;
             // 
+            // fillbox4
+            // 
+            this.fillbox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.fillbox4.BorderRadius = 5;
+            this.fillbox4.BorderThickness = 0;
+            this.fillbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fillbox4.DefaultText = "";
+            this.fillbox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.fillbox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.fillbox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fillbox4.DisabledState.Parent = this.fillbox4;
+            this.fillbox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fillbox4.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fillbox4.FocusedState.Parent = this.fillbox4;
+            this.fillbox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fillbox4.HoverState.Parent = this.fillbox4;
+            this.fillbox4.Location = new System.Drawing.Point(-4, 288);
+            this.fillbox4.Name = "fillbox4";
+            this.fillbox4.PasswordChar = '\0';
+            this.fillbox4.PlaceholderText = "";
+            this.fillbox4.ReadOnly = true;
+            this.fillbox4.SelectedText = "";
+            this.fillbox4.ShadowDecoration.Parent = this.fillbox4;
+            this.fillbox4.Size = new System.Drawing.Size(10, 45);
+            this.fillbox4.TabIndex = 19;
+            // 
+            // add_emp
+            // 
+            this.add_emp.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.add_emp.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.add_emp.CheckedState.Parent = this.add_emp;
+            this.add_emp.CustomImages.Parent = this.add_emp;
+            this.add_emp.FillColor = System.Drawing.Color.Transparent;
+            this.add_emp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_emp.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.add_emp.HoverState.Parent = this.add_emp;
+            this.add_emp.Location = new System.Drawing.Point(0, 288);
+            this.add_emp.Name = "add_emp";
+            this.add_emp.ShadowDecoration.Parent = this.add_emp;
+            this.add_emp.Size = new System.Drawing.Size(253, 45);
+            this.add_emp.TabIndex = 18;
+            this.add_emp.Text = "Add Member";
+            this.add_emp.Click += new System.EventHandler(this.add_emp_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2Button2.BackColor = System.Drawing.SystemColors.Window;
+            this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(-1, 391);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(253, 45);
+            this.guna2Button2.TabIndex = 17;
+            this.guna2Button2.Text = "Log Out";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // fillbox7
             // 
             this.fillbox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -94,7 +166,7 @@ namespace SDL_csharp
             this.fillbox7.FocusedState.Parent = this.fillbox7;
             this.fillbox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox7.HoverState.Parent = this.fillbox7;
-            this.fillbox7.Location = new System.Drawing.Point(-4, 288);
+            this.fillbox7.Location = new System.Drawing.Point(-4, 339);
             this.fillbox7.Name = "fillbox7";
             this.fillbox7.PasswordChar = '\0';
             this.fillbox7.PlaceholderText = "";
@@ -114,7 +186,7 @@ namespace SDL_csharp
             this.abt.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abt.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.abt.HoverState.Parent = this.abt;
-            this.abt.Location = new System.Drawing.Point(0, 288);
+            this.abt.Location = new System.Drawing.Point(0, 339);
             this.abt.Name = "abt";
             this.abt.ShadowDecoration.Parent = this.abt;
             this.abt.Size = new System.Drawing.Size(253, 45);
@@ -174,7 +246,7 @@ namespace SDL_csharp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
@@ -186,7 +258,7 @@ namespace SDL_csharp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(54, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 25);
@@ -335,6 +407,7 @@ namespace SDL_csharp
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dashboard.Controls.Add(this.userControl61);
             this.dashboard.Controls.Add(this.userControl31);
             this.dashboard.Controls.Add(this.userControl51);
             this.dashboard.Controls.Add(this.userControl11);
@@ -392,27 +465,13 @@ namespace SDL_csharp
             this.userControl21.Size = new System.Drawing.Size(589, 450);
             this.userControl21.TabIndex = 9;
             // 
-            // guna2Button2
+            // userControl61
             // 
-            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2Button2.BackColor = System.Drawing.SystemColors.Window;
-            this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(-1, 391);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(253, 45);
-            this.guna2Button2.TabIndex = 17;
-            this.guna2Button2.Text = "Log Out";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.userControl61.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl61.Location = new System.Drawing.Point(1, 0);
+            this.userControl61.Name = "userControl61";
+            this.userControl61.Size = new System.Drawing.Size(590, 450);
+            this.userControl61.TabIndex = 13;
             // 
             // contents
             // 
@@ -457,5 +516,8 @@ namespace SDL_csharp
         private UserControl5 userControl51;
         private UserControl4 userControl41;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox fillbox4;
+        private Guna.UI2.WinForms.Guna2Button add_emp;
+        private UserControl6 userControl61;
     }
 }

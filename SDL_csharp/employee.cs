@@ -19,7 +19,7 @@ namespace SDL_csharp
 
         private void home_Click(object sender, EventArgs e)
         {
-            fillbox1.Hide();
+            fillbox1.Show();
             fillbox2.Hide();
             userControl31.Show();
             userControl31.BringToFront();
@@ -38,6 +38,17 @@ namespace SDL_csharp
             this.Hide();
             Form1 frm = new Form1();
             frm.Show();
+        }
+
+        private void employee_Load(object sender, EventArgs e)
+        {
+            fillbox1.Hide();
+            fillbox2.Hide();
+        }
+
+        private void employee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

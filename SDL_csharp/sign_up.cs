@@ -44,16 +44,18 @@ namespace SDL_csharp
             String cnf = cnft.Text;
             String eml = emlt.Text;
             String cntct = cnt.Text;
+            String lgn = "Employee";
             Form1 form = new Form1();
 
 
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`Username`, `Password`, `Email`, `Contact`) VALUES (@usn , @pswd, @eml, @cnt)",db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`Username`, `Password`, `Email`, `Contact`, `login_type`) VALUES (@usn , @pswd, @eml, @cnt, @lgn)", db.getConnection());
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = usr;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = pswd;
             cmd.Parameters.Add("@eml", MySqlDbType.VarChar).Value = eml;
             cmd.Parameters.Add("@cnt", MySqlDbType.VarChar).Value = cntct;
+            cmd.Parameters.Add("lgn", MySqlDbType.VarChar).Value = lgn;
 
             db.openConnection();
             if (usr == "" || pswd == "" || eml == "" || cntct == "")

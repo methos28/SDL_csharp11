@@ -50,6 +50,8 @@ namespace SDL_csharp
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +69,8 @@ namespace SDL_csharp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.cnft);
             this.panel2.Controls.Add(this.richTextBox5);
             this.panel2.Controls.Add(this.label1);
@@ -272,6 +276,26 @@ namespace SDL_csharp
             this.label4.TabIndex = 4;
             this.label4.Text = "Sign UP";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 422);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 15);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Note :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(62, 422);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 16);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "This Page Creates an Employee";
+            // 
             // sign_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +339,7 @@ namespace SDL_csharp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox cnft;
         private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
     }
 }

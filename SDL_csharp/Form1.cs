@@ -47,7 +47,7 @@ namespace SDL_csharp
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM `dbs_personal` WHERE `username` = @usn and `Password` = @pswd", db.getConnection());
-
+            MySqlCommand cm1 = new MySqlCommand();
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = password;
             
@@ -56,11 +56,11 @@ namespace SDL_csharp
             adapter.Fill(table);
 
             employee emp = new employee();
-            i = login_type.GetItemText(login_type.SelectedText);
+            string i = "Admin";
 
             if (table.Rows.Count > 0)
             { 
-                if (i == "Admin")
+                if (login_type.SelectedIndex == 0)
                 {
                     this.Hide();
                     contents.Show();

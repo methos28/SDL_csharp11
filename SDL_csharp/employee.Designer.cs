@@ -29,6 +29,7 @@ namespace SDL_csharp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employee));
             this.userControl21 = new SDL_csharp.UserControl2();
             this.logout = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -236,8 +237,11 @@ namespace SDL_csharp
             this.ClientSize = new System.Drawing.Size(842, 449);
             this.Controls.Add(this.dashboard);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "employee";
             this.Text = "employee";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.employee_FormClosing);
+            this.Load += new System.EventHandler(this.employee_Load);
             this.dashboard.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
