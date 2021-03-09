@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace SDL_csharp
@@ -18,7 +20,6 @@ namespace SDL_csharp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            int ch = 0;
         }
     }
 }

@@ -64,7 +64,6 @@ namespace SDL_csharp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 353);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label5
             // 
@@ -179,6 +178,7 @@ namespace SDL_csharp
             this.button1.Text = "Log IN";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // sgnup1
             // 
@@ -226,7 +226,6 @@ namespace SDL_csharp
             this.login_type.ShadowDecoration.Parent = this.login_type;
             this.login_type.Size = new System.Drawing.Size(232, 36);
             this.login_type.TabIndex = 12;
-            this.login_type.SelectedIndexChanged += new System.EventHandler(this.login_type_SelectedIndexChanged);
             // 
             // Form1
             // 

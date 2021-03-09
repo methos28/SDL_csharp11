@@ -45,9 +45,9 @@ namespace SDL_csharp
             this.cntct = new System.Windows.Forms.TextBox();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.sgnup2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.sgnup2 = new System.Windows.Forms.Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -176,7 +176,6 @@ namespace SDL_csharp
             this.eml.Name = "eml";
             this.eml.Size = new System.Drawing.Size(232, 16);
             this.eml.TabIndex = 25;
-            this.eml.UseSystemPasswordChar = true;
             // 
             // richTextBox4
             // 
@@ -207,7 +206,6 @@ namespace SDL_csharp
             this.cntct.Name = "cntct";
             this.cntct.Size = new System.Drawing.Size(232, 16);
             this.cntct.TabIndex = 28;
-            this.cntct.UseSystemPasswordChar = true;
             // 
             // richTextBox5
             // 
@@ -229,23 +227,6 @@ namespace SDL_csharp
             this.label4.TabIndex = 26;
             this.label4.Text = "Contact";
             // 
-            // sgnup2
-            // 
-            this.sgnup2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.sgnup2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.sgnup2.FlatAppearance.BorderSize = 0;
-            this.sgnup2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.sgnup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sgnup2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sgnup2.ForeColor = System.Drawing.Color.White;
-            this.sgnup2.Location = new System.Drawing.Point(257, 414);
-            this.sgnup2.Name = "sgnup2";
-            this.sgnup2.Size = new System.Drawing.Size(72, 32);
-            this.sgnup2.TabIndex = 29;
-            this.sgnup2.Text = "Add";
-            this.sgnup2.UseVisualStyleBackColor = false;
-            this.sgnup2.Click += new System.EventHandler(this.sgnup2_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -260,14 +241,33 @@ namespace SDL_csharp
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(590, 49);
             this.guna2Panel1.TabIndex = 31;
+            // 
+            // sgnup2
+            // 
+            this.sgnup2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.sgnup2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.sgnup2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.sgnup2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.sgnup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sgnup2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sgnup2.ForeColor = System.Drawing.Color.White;
+            this.sgnup2.Location = new System.Drawing.Point(257, 414);
+            this.sgnup2.Name = "sgnup2";
+            this.sgnup2.Size = new System.Drawing.Size(72, 32);
+            this.sgnup2.TabIndex = 29;
+            this.sgnup2.Text = "Add";
+            this.sgnup2.UseVisualStyleBackColor = false;
+            this.sgnup2.Click += new System.EventHandler(this.sgnup2_Click);
             // 
             // UserControl6
             // 
@@ -319,8 +319,8 @@ namespace SDL_csharp
         private System.Windows.Forms.TextBox cntct;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button sgnup2;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Button sgnup2;
     }
 }
