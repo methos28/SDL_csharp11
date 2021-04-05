@@ -13,10 +13,13 @@ namespace SDL_csharp
         public UserControl2()
         {
             InitializeComponent();
+            
         }
         int amt;
         int total = 0;
         int i = 0;
+
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -68,7 +71,16 @@ namespace SDL_csharp
 
         private void UserControl2_Load(object sender, EventArgs e)
         {
-
+            data db = new data();
+            MySqlCommand cmd = new MySqlCommand(" SELECT DISTINCT `Catagory` FROM `foodorder` ", db.getConnection());
+            db.openConnection();
+            MySqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                String cats = rd.GetValue(0).ToString();
+                cate_UC.Items.Add(cats);
+            }
+            db.closeConnection();
         }
 
 

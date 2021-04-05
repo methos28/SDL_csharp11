@@ -217,16 +217,6 @@ namespace SDL_csharp
             this.cate_UC.FormattingEnabled = true;
             this.cate_UC.HoverState.Parent = this.cate_UC;
             this.cate_UC.ItemHeight = 30;
-            this.cate_UC.Items.AddRange(new object[] {
-            "Starters",
-            "South Indian",
-            "Punjabi",
-            "Mexican",
-            "American",
-            "Italian",
-            "Chinese",
-            "Deserts",
-            "Softdrinks"});
             this.cate_UC.ItemsAppearance.Parent = this.cate_UC;
             this.cate_UC.Location = new System.Drawing.Point(12, 35);
             this.cate_UC.Name = "cate_UC";

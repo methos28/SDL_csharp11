@@ -47,12 +47,12 @@ namespace SDL_csharp
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControl61 = new SDL_csharp.UserControl6();
             this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl11 = new SDL_csharp.UserControl1();
             this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
-            this.userControl61 = new SDL_csharp.UserControl6();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -385,7 +385,7 @@ namespace SDL_csharp
             // add
             // 
             this.add.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.add.BackColor = System.Drawing.SystemColors.Window;
+            this.add.BackColor = System.Drawing.Color.White;
             this.add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.add.BorderColor = System.Drawing.Color.Transparent;
             this.add.BorderThickness = 1;
@@ -418,6 +418,14 @@ namespace SDL_csharp
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
+            // 
+            // userControl61
+            // 
+            this.userControl61.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl61.Location = new System.Drawing.Point(1, 0);
+            this.userControl61.Name = "userControl61";
+            this.userControl61.Size = new System.Drawing.Size(590, 450);
+            this.userControl61.TabIndex = 13;
             // 
             // userControl31
             // 
@@ -464,14 +472,6 @@ namespace SDL_csharp
             this.userControl21.Name = "userControl21";
             this.userControl21.Size = new System.Drawing.Size(589, 450);
             this.userControl21.TabIndex = 9;
-            // 
-            // userControl61
-            // 
-            this.userControl61.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userControl61.Location = new System.Drawing.Point(1, 0);
-            this.userControl61.Name = "userControl61";
-            this.userControl61.Size = new System.Drawing.Size(590, 450);
-            this.userControl61.TabIndex = 13;
             // 
             // contents
             // 

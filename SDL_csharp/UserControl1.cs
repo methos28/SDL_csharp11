@@ -60,7 +60,11 @@ namespace SDL_csharp
                 MessageBox.Show("Error!");
             }
             db.closeConnection();
+
+
+
         }
+
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
@@ -69,7 +73,7 @@ namespace SDL_csharp
 
         private void UserControl1_Leave(object sender, EventArgs e)
         {
-            combo_t.SelectedIndex = -1;
+            combo_t.Clear();
             name_t.Clear();
             cost_t.Clear();
         }

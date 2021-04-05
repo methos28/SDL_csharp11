@@ -35,13 +35,14 @@ namespace SDL_csharp
             userControl41.Hide();
             userControl51.Hide();
             userControl61.Hide();
-            
-         
 
 
-            
-           
-           
+
+
+
+
+
+
 
         }
 
@@ -157,6 +158,8 @@ namespace SDL_csharp
             this.Hide();
             Form1 frm = new Form1();
             frm.Show();
+
+
         }
 
         private void add_emp_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace SDL_csharp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
+
         }
     }
 }

@@ -34,9 +34,9 @@ namespace SDL_csharp
             this.label1 = new System.Windows.Forms.Label();
             this.name_t = new System.Windows.Forms.TextBox();
             this.cost_t = new System.Windows.Forms.TextBox();
-            this.combo_t = new Guna.UI2.WinForms.Guna2ComboBox();
             this.add_b = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.combo_t = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,36 +94,6 @@ namespace SDL_csharp
             this.cost_t.Size = new System.Drawing.Size(186, 33);
             this.cost_t.TabIndex = 4;
             // 
-            // combo_t
-            // 
-            this.combo_t.BackColor = System.Drawing.Color.Transparent;
-            this.combo_t.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.combo_t.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_t.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_t.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_t.FocusedState.Parent = this.combo_t;
-            this.combo_t.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.combo_t.FormattingEnabled = true;
-            this.combo_t.HoverState.Parent = this.combo_t;
-            this.combo_t.ItemHeight = 30;
-            this.combo_t.Items.AddRange(new object[] {
-            "Starters",
-            "South Indian",
-            "Punjabi",
-            "Mexican",
-            "American",
-            "Italian",
-            "Chinese",
-            "Deserts",
-            "Softdrinks"});
-            this.combo_t.ItemsAppearance.Parent = this.combo_t;
-            this.combo_t.Location = new System.Drawing.Point(59, 110);
-            this.combo_t.Name = "combo_t";
-            this.combo_t.ShadowDecoration.Parent = this.combo_t;
-            this.combo_t.Size = new System.Drawing.Size(224, 36);
-            this.combo_t.TabIndex = 5;
-            // 
             // add_b
             // 
             this.add_b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -140,20 +110,31 @@ namespace SDL_csharp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SDL_csharp.Properties.Resources.bg;
-            this.pictureBox1.Location = new System.Drawing.Point(226, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(206, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(622, 334);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // combo_t
+            // 
+            this.combo_t.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.combo_t.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.combo_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.combo_t.Location = new System.Drawing.Point(59, 106);
+            this.combo_t.Multiline = true;
+            this.combo_t.Name = "combo_t";
+            this.combo_t.Size = new System.Drawing.Size(186, 33);
+            this.combo_t.TabIndex = 9;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.add_b);
             this.Controls.Add(this.combo_t);
+            this.Controls.Add(this.add_b);
             this.Controls.Add(this.cost_t);
             this.Controls.Add(this.name_t);
             this.Controls.Add(this.label3);
@@ -177,8 +158,8 @@ namespace SDL_csharp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox name_t;
         private System.Windows.Forms.TextBox cost_t;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_t;
         private System.Windows.Forms.Button add_b;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox combo_t;
     }
 }
