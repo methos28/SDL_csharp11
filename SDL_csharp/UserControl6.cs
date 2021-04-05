@@ -30,12 +30,13 @@ namespace SDL_csharp
             String cn = cnf.Text;
             String em = eml.Text;
             String cntc = cntct.Text;
-            String lgn = login_type.SelectedText.ToString();
-            
+            String lgn = login_type.GetItemText(login_type.SelectedItem);
+
+
 
 
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`Username`, `Password`, `Email`, `Contact`, `login_type`) VALUES (@usn , @pswd, @eml, @cnt, @lgn)", db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`Username`, `Password`, `Email`, `Contact`, `login_type`) VALUES (@usn, @pswd, @eml, @cnt, @lgn)", db.getConnection());
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = us;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = psw;
@@ -63,6 +64,11 @@ namespace SDL_csharp
                 MessageBox.Show("Error");
             }
             db.closeConnection();
+        }
+
+        private void login_type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

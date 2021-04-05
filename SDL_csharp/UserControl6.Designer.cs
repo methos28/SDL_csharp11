@@ -74,10 +74,11 @@ namespace SDL_csharp
             this.login_type.ShadowDecoration.Parent = this.login_type;
             this.login_type.Size = new System.Drawing.Size(232, 36);
             this.login_type.TabIndex = 19;
+            this.login_type.SelectedIndexChanged += new System.EventHandler(this.login_type_SelectedIndexChanged);
             // 
             // usr
             // 
-            this.usr.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.usr.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.usr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usr.Location = new System.Drawing.Point(182, 93);
@@ -109,7 +110,7 @@ namespace SDL_csharp
             // 
             // cnf
             // 
-            this.cnf.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.cnf.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cnf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cnf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cnf.Location = new System.Drawing.Point(182, 215);
@@ -142,7 +143,7 @@ namespace SDL_csharp
             // 
             // cntct
             // 
-            this.cntct.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.cntct.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cntct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cntct.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cntct.Location = new System.Drawing.Point(184, 329);
@@ -165,11 +166,11 @@ namespace SDL_csharp
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.label5.Location = new System.Drawing.Point(207, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 32);
+            this.label5.Size = new System.Drawing.Size(192, 33);
             this.label5.TabIndex = 30;
             this.label5.Text = "Add Member";
             // 
@@ -178,7 +179,7 @@ namespace SDL_csharp
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -205,7 +206,7 @@ namespace SDL_csharp
             // 
             // pswd
             // 
-            this.pswd.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pswd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pswd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pswd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pswd.Location = new System.Drawing.Point(182, 146);
@@ -216,7 +217,7 @@ namespace SDL_csharp
             // 
             // eml
             // 
-            this.eml.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.eml.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.eml.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eml.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eml.Location = new System.Drawing.Point(184, 277);
@@ -273,7 +274,7 @@ namespace SDL_csharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Controls.Add(this.sgnup2);
             this.Controls.Add(this.cntct);
             this.Controls.Add(this.label4);
