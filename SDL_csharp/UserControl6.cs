@@ -41,7 +41,7 @@ namespace SDL_csharp
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = psw;
             cmd.Parameters.Add("@eml", MySqlDbType.VarChar).Value = em;
             cmd.Parameters.Add("@cnt", MySqlDbType.VarChar).Value = cntc;
-            cmd.Parameters.Add("lgn", MySqlDbType.VarChar).Value = lgn;
+            cmd.Parameters.Add("@lgn", MySqlDbType.VarChar).Value = lgn;
 
             db.openConnection();
             if (us == "" || psw == "" || em == "" || cntc == "")
