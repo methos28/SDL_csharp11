@@ -114,8 +114,14 @@ namespace SDL_csharp
             {
                 String cats = rd.GetValue(0).ToString();
                 cate_UC.Items.Add(cats);
+                cate_edt.Items.Add(cats);
             }
             db.closeConnection();
+        }
+
+        private void cate_edt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

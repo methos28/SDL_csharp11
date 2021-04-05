@@ -235,22 +235,13 @@ namespace SDL_csharp
             this.cate_edt.FormattingEnabled = true;
             this.cate_edt.HoverState.Parent = this.cate_edt;
             this.cate_edt.ItemHeight = 30;
-            this.cate_edt.Items.AddRange(new object[] {
-            "Starters",
-            "South Indian",
-            "Punjabi",
-            "Mexican",
-            "American",
-            "Italian",
-            "Chinese",
-            "Deserts",
-            "Softdrinks"});
             this.cate_edt.ItemsAppearance.Parent = this.cate_edt;
             this.cate_edt.Location = new System.Drawing.Point(349, 254);
             this.cate_edt.Name = "cate_edt";
             this.cate_edt.ShadowDecoration.Parent = this.cate_edt;
             this.cate_edt.Size = new System.Drawing.Size(200, 36);
             this.cate_edt.TabIndex = 21;
+            this.cate_edt.SelectedIndexChanged += new System.EventHandler(this.cate_edt_SelectedIndexChanged);
             // 
             // UserControl4
             // 
