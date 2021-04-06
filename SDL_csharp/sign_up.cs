@@ -18,7 +18,7 @@ namespace SDL_csharp
     public partial class sign_up : Form
     {
         
-        Form1 form = new Form1();
+        
 
         public sign_up()
         {
