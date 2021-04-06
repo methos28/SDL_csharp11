@@ -32,8 +32,6 @@ namespace SDL_csharp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sign_up));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cnft = new System.Windows.Forms.TextBox();
@@ -49,9 +47,11 @@ namespace SDL_csharp
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,24 +94,6 @@ namespace SDL_csharp
             this.panel2.Size = new System.Drawing.Size(308, 507);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // guna2Separator3
-            // 
-            this.guna2Separator3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator3.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.guna2Separator3.Location = new System.Drawing.Point(26, 331);
-            this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(260, 12);
-            this.guna2Separator3.TabIndex = 37;
-            // 
-            // guna2Separator4
-            // 
-            this.guna2Separator4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator4.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.guna2Separator4.Location = new System.Drawing.Point(26, 157);
-            this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(258, 12);
-            this.guna2Separator4.TabIndex = 36;
             // 
             // label5
             // 
@@ -192,7 +174,7 @@ namespace SDL_csharp
             // 
             this.con.AutoSize = true;
             this.con.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.con.Location = new System.Drawing.Point(26, 357);
+            this.con.Location = new System.Drawing.Point(26, 358);
             this.con.Name = "con";
             this.con.Size = new System.Drawing.Size(63, 17);
             this.con.TabIndex = 16;
@@ -269,15 +251,6 @@ namespace SDL_csharp
             this.label4.TabIndex = 4;
             this.label4.Text = "Sign UP";
             // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator2.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.guna2Separator2.Location = new System.Drawing.Point(26, 273);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(258, 12);
-            this.guna2Separator2.TabIndex = 38;
-            // 
             // guna2Separator1
             // 
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
@@ -287,6 +260,24 @@ namespace SDL_csharp
             this.guna2Separator1.Size = new System.Drawing.Size(258, 12);
             this.guna2Separator1.TabIndex = 37;
             // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Separator2.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.guna2Separator2.Location = new System.Drawing.Point(26, 273);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(258, 12);
+            this.guna2Separator2.TabIndex = 38;
+            // 
+            // guna2Separator3
+            // 
+            this.guna2Separator3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Separator3.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.guna2Separator3.Location = new System.Drawing.Point(26, 331);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(260, 12);
+            this.guna2Separator3.TabIndex = 37;
+            // 
             // guna2Separator5
             // 
             this.guna2Separator5.BackColor = System.Drawing.Color.Transparent;
@@ -295,6 +286,15 @@ namespace SDL_csharp
             this.guna2Separator5.Name = "guna2Separator5";
             this.guna2Separator5.Size = new System.Drawing.Size(260, 12);
             this.guna2Separator5.TabIndex = 39;
+            // 
+            // guna2Separator4
+            // 
+            this.guna2Separator4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Separator4.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.guna2Separator4.Location = new System.Drawing.Point(26, 157);
+            this.guna2Separator4.Name = "guna2Separator4";
+            this.guna2Separator4.Size = new System.Drawing.Size(258, 12);
+            this.guna2Separator4.TabIndex = 36;
             // 
             // sign_up
             // 

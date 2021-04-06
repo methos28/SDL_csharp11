@@ -239,6 +239,7 @@ namespace SDL_csharp
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "employee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "employee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.employee_FormClosing);
             this.Load += new System.EventHandler(this.employee_Load);
