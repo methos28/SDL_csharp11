@@ -150,7 +150,11 @@ namespace SDL_csharp
             {
                 int ttl = int.Parse(total_t.Text);
                 total = total + ttl;
-                tct.Text = "Rs. " + total;
+                double gst = total * 0.05;
+                double grand = total + gst;
+                gstp.Text = "Rs ." + gst;
+                ttlp.Text = "Rs. " + total;
+                tct.Text = "Rs. " + grand;
 
             }
 
@@ -209,7 +213,7 @@ namespace SDL_csharp
             print.PageNumberInHeader = false;
             print.PorportionalColumns = true;
             print.HeaderCellAlignment = StringAlignment.Near;
-            print.Footer = "Grand Total is :"+tct.Text+"\r\nThank You For Choosing US ";
+            print.Footer = "Total is : "+ttlp.Text+ "\r\n GST(5%) : "+gstp.Text+ "\r\n Grand Total : "+ tct.Text+"\r\nThank You For Choosing US ";
             print.PrintDataGridView(cartbox);
             
             
@@ -225,6 +229,11 @@ namespace SDL_csharp
             {
                 MessageBox.Show("Nothing to select ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
