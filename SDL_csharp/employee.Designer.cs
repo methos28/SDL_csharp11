@@ -30,30 +30,21 @@ namespace SDL_csharp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employee));
-            this.userControl21 = new SDL_csharp.UserControl2();
             this.logout = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.home = new Guna.UI2.WinForms.Guna2Button();
-            this.userControl31 = new SDL_csharp.UserControl3();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.order = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fillbox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.userControl31 = new SDL_csharp.UserControl3();
+            this.userControl22 = new SDL_csharp.UserControl2();
             this.dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl21.Location = new System.Drawing.Point(0, 0);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(589, 450);
-            this.userControl21.TabIndex = 9;
             // 
             // logout
             // 
@@ -126,22 +117,11 @@ namespace SDL_csharp
             this.home.Text = "Home";
             this.home.Click += new System.EventHandler(this.home_Click);
             // 
-            // userControl31
-            // 
-            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(0, 1);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
-            // 
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dashboard.Controls.Add(this.userControl22);
             this.dashboard.Controls.Add(this.userControl31);
-            this.dashboard.Controls.Add(this.userControl21);
             this.dashboard.Location = new System.Drawing.Point(252, -1);
             this.dashboard.Name = "dashboard";
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
@@ -230,6 +210,25 @@ namespace SDL_csharp
             this.fillbox2.Size = new System.Drawing.Size(10, 45);
             this.fillbox2.TabIndex = 5;
             // 
+            // userControl31
+            // 
+            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl31.Location = new System.Drawing.Point(1, 1);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(590, 450);
+            this.userControl31.TabIndex = 12;
+            // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl22.Location = new System.Drawing.Point(1, 0);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(590, 450);
+            this.userControl22.TabIndex = 13;
+            // 
             // employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,8 +251,6 @@ namespace SDL_csharp
         }
 
         #endregion
-
-        private UserControl2 userControl21;
         private Guna.UI2.WinForms.Guna2Button logout;
         private Guna.UI2.WinForms.Guna2TextBox fillbox1;
         private Guna.UI2.WinForms.Guna2Button home;
@@ -264,5 +261,6 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2Button order;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox fillbox2;
+        private UserControl2 userControl22;
     }
 }

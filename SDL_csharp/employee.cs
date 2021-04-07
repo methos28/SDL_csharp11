@@ -29,8 +29,8 @@ namespace SDL_csharp
         {
             fillbox1.Hide();
             fillbox2.Show();
-            userControl21.Show();
-            userControl21.BringToFront();
+            userControl22.Show();
+            userControl22.BringToFront();
         }
 
         private void logout_Click(object sender, EventArgs e)
