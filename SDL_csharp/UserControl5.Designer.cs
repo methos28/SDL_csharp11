@@ -97,7 +97,7 @@ namespace SDL_csharp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -109,7 +109,7 @@ namespace SDL_csharp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SDL_csharp.Properties.Resources.Burger;
-            this.pictureBox1.Location = new System.Drawing.Point(-51, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-52, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

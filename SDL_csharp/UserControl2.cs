@@ -15,9 +15,14 @@ namespace SDL_csharp
             InitializeComponent();
             
         }
-        int amt;
-        int total = 0;
-        int i = 0;
+        double amt;
+        double total = 0;
+        int i = 138;  
+        double gst = 0;
+        double gstr;
+        double gst_click;
+        double grand;
+        double tcp = 0;
 
 
         private void label2_Click(object sender, EventArgs e)
@@ -148,13 +153,14 @@ namespace SDL_csharp
            
             if(total_t.Text != "" || total_t.Text != "0")
             {
+                
                 int ttl = int.Parse(total_t.Text);
                 total = total + ttl;
-                double gst = total * 0.05;
-                double grand = total + gst;
-                gstp.Text = "Rs ." + gst;
-                ttlp.Text = "Rs. " + total;
-                tct.Text = "Rs. " + grand;
+                gst = total * 0.05;
+                grand = total + gst;
+                gstp.Text =  Convert.ToString(gst);
+                ttlp.Text =  Convert.ToString(total);
+                tct.Text =  Convert.ToString(grand);
 
             }
 
@@ -184,8 +190,13 @@ namespace SDL_csharp
             }
             if(tct.Text != "" || tct.Text != "0")
             {
-            total = total - amt;
-            tct.Text = "Rs. "+total;
+                total = Convert.ToDouble(int.Parse(ttlp.Text) - amt);
+                ttlp.Text = Convert.ToString(total);
+                gstr = total * 0.05;
+                gstp.Text = Convert.ToString(gstr);
+                tcp = amt + gst_click;
+                double grnd = double.Parse(tct.Text) - tcp;
+                tct.Text =  Convert.ToString(grnd);
             }
         }
  
@@ -202,18 +213,15 @@ namespace SDL_csharp
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             DGVPrinter print = new DGVPrinter();
-            
+
             i++;
-
-
             print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
             print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : "+DateTime.Now.TimeOfDay.ToString();
             print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
-            print.PageNumbers = true;
             print.PageNumberInHeader = false;
             print.PorportionalColumns = true;
             print.HeaderCellAlignment = StringAlignment.Near;
-            print.Footer = "Total is : "+ttlp.Text+ "\r\n GST(5%) : "+gstp.Text+ "\r\n Grand Total : "+ tct.Text+"\r\nThank You For Choosing US ";
+            print.Footer = "Total is : Rs. "+ttlp.Text+ "\r\n GST(5%) : Rs."+gstp.Text+ "\r\n Grand Total : Rs."+ tct.Text+"\r\nThank You For Choosing US ";
             print.PrintDataGridView(cartbox);
             
             
@@ -224,11 +232,14 @@ namespace SDL_csharp
             try
             {
                 amt = int.Parse(cartbox.Rows[e.RowIndex].Cells[3].Value.ToString());
+                gst_click = amt * 0.05;
             }
             catch
             {
-                MessageBox.Show("Nothing to select ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nothing to select here", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+           
+
         }
 
         private void label5_Click(object sender, EventArgs e)

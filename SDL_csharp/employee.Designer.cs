@@ -223,7 +223,7 @@ namespace SDL_csharp
             // 
             // userControl22
             // 
-            this.userControl22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl22.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.userControl22.Location = new System.Drawing.Point(1, 0);
             this.userControl22.Name = "userControl22";
             this.userControl22.Size = new System.Drawing.Size(590, 450);

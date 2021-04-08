@@ -78,7 +78,7 @@ namespace SDL_csharp
             // 
             // usr
             // 
-            this.usr.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.usr.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.usr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usr.Location = new System.Drawing.Point(182, 93);
@@ -110,7 +110,7 @@ namespace SDL_csharp
             // 
             // cnf
             // 
-            this.cnf.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cnf.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cnf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cnf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cnf.Location = new System.Drawing.Point(182, 215);
@@ -143,7 +143,7 @@ namespace SDL_csharp
             // 
             // cntct
             // 
-            this.cntct.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cntct.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cntct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cntct.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cntct.Location = new System.Drawing.Point(184, 329);
@@ -206,7 +206,7 @@ namespace SDL_csharp
             // 
             // pswd
             // 
-            this.pswd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pswd.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pswd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pswd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pswd.Location = new System.Drawing.Point(182, 146);
@@ -217,7 +217,7 @@ namespace SDL_csharp
             // 
             // eml
             // 
-            this.eml.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.eml.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.eml.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eml.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eml.Location = new System.Drawing.Point(184, 277);
