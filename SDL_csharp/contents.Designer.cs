@@ -49,10 +49,10 @@ namespace SDL_csharp
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
             this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl11 = new SDL_csharp.UserControl1();
+            this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl61 = new SDL_csharp.UserControl6();
             this.userControl31 = new SDL_csharp.UserControl3();
-            this.userControl41 = new SDL_csharp.UserControl4();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -68,7 +68,6 @@ namespace SDL_csharp
             this.panel1.Controls.Add(this.fillbox7);
             this.panel1.Controls.Add(this.abt);
             this.panel1.Controls.Add(this.fillbox6);
-            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.fillbox3);
             this.panel1.Controls.Add(this.fillbox2);
@@ -76,6 +75,7 @@ namespace SDL_csharp
             this.panel1.Controls.Add(this.order);
             this.panel1.Controls.Add(this.delete_itm);
             this.panel1.Controls.Add(this.add);
+            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -436,6 +436,15 @@ namespace SDL_csharp
             this.userControl11.Size = new System.Drawing.Size(590, 450);
             this.userControl11.TabIndex = 8;
             // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.userControl41.Location = new System.Drawing.Point(0, 0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(590, 450);
+            this.userControl41.TabIndex = 14;
+            // 
             // userControl21
             // 
             this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -463,15 +472,6 @@ namespace SDL_csharp
             this.userControl31.Name = "userControl31";
             this.userControl31.Size = new System.Drawing.Size(590, 450);
             this.userControl31.TabIndex = 12;
-            // 
-            // userControl41
-            // 
-            this.userControl41.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.userControl41.Location = new System.Drawing.Point(0, 0);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(590, 450);
-            this.userControl41.TabIndex = 14;
             // 
             // contents
             // 

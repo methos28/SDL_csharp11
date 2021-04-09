@@ -186,7 +186,7 @@ namespace SDL_csharp
             }
             catch
             {
-                MessageBox.Show("Unexpected Error", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unexpected Error ", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if(tct.Text != "" || tct.Text != "0")
             {

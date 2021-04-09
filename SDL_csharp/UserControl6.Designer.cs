@@ -189,13 +189,14 @@ namespace SDL_csharp
             // 
             // sgnup2
             // 
-            this.sgnup2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.sgnup2.BackColor = System.Drawing.Color.Transparent;
             this.sgnup2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.sgnup2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.sgnup2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.sgnup2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(145)))), ((int)(((byte)(186)))));
+            this.sgnup2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(185)))), ((int)(((byte)(240)))));
             this.sgnup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sgnup2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sgnup2.ForeColor = System.Drawing.Color.White;
+            this.sgnup2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.sgnup2.Location = new System.Drawing.Point(257, 414);
             this.sgnup2.Name = "sgnup2";
             this.sgnup2.Size = new System.Drawing.Size(72, 32);

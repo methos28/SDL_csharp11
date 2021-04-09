@@ -51,9 +51,7 @@ namespace SDL_csharp
 
             else if (cmd.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("item Added Successfully.");
-                
-
+                MessageBox.Show("item Added Successfully.","Info",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             else
             {
