@@ -187,6 +187,7 @@ namespace SDL_csharp
             catch
             {
                 MessageBox.Show("Unexpected Error ", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
             if(tct.Text != "" || tct.Text != "0")
             {
@@ -198,6 +199,7 @@ namespace SDL_csharp
                 double grnd = double.Parse(tct.Text) - tcp;
                 tct.Text =  Convert.ToString(grnd);
             }
+
         }
  
         private void cartbox_Leave(object sender, EventArgs e)
@@ -213,18 +215,24 @@ namespace SDL_csharp
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             DGVPrinter print = new DGVPrinter();
+            if (cartbox.Rows.Count<1){
+                MessageBox.Show("There is nothing to Print", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                i++;
+                print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
+                print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : " + DateTime.Now.TimeOfDay.ToString();
+                print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+                print.PageNumberInHeader = false;
+                print.PorportionalColumns = true;
+                print.HeaderCellAlignment = StringAlignment.Near;
+                print.Footer = "Total is : Rs. " + ttlp.Text + "\r\n GST(5%) : Rs." + gstp.Text + "\r\n Grand Total : Rs." + tct.Text + "\r\nThank You For Choosing US ";
+                print.PrintDataGridView(cartbox);
 
-            i++;
-            print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
-            print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : "+DateTime.Now.TimeOfDay.ToString();
-            print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
-            print.PageNumberInHeader = false;
-            print.PorportionalColumns = true;
-            print.HeaderCellAlignment = StringAlignment.Near;
-            print.Footer = "Total is : Rs. "+ttlp.Text+ "\r\n GST(5%) : Rs."+gstp.Text+ "\r\n Grand Total : Rs."+ tct.Text+"\r\nThank You For Choosing US ";
-            print.PrintDataGridView(cartbox);
-            
-            
+            }
+
+
         }
         
         private void cartbox_CellClick(object sender, DataGridViewCellEventArgs e)

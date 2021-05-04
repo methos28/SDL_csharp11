@@ -121,7 +121,7 @@ namespace SDL_csharp
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(12, 83);
+            this.listBox1.Location = new System.Drawing.Point(12, 88);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(170, 325);
             this.listBox1.TabIndex = 11;

@@ -25,7 +25,7 @@ namespace SDL_csharp
             data db = new data();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand cmd = new MySqlCommand("SELECT`ItemName` FROM `foodorder` WHERE `Catagory` = '" + name + "'", db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("SELECT `ItemName` FROM `foodorder` WHERE `Catagory` = '" + name + "'", db.getConnection());
             db.openConnection();
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
@@ -86,6 +86,7 @@ namespace SDL_csharp
                 MessageBox.Show("Unexpected Error","Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             db.closeConnection();
+
         }
 
         private void itmlist_SelectedIndexChanged(object sender, EventArgs e)
@@ -104,10 +105,11 @@ namespace SDL_csharp
             db.closeConnection();
         }
 
-        private void UserControl4_Load(object sender, EventArgs e)
+        private void UserControl4_Load_1(object sender, EventArgs e)
         {
+
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("SELECT DISTINCT `Catagory` FROM `foodorder`" , db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("SELECT `Category` FROM `cat`", db.getConnection());
             db.openConnection();
             MySqlDataReader rd = cmd.ExecuteReader();
             while (rd.Read())
@@ -119,9 +121,28 @@ namespace SDL_csharp
             db.closeConnection();
         }
 
-        private void cate_edt_SelectedIndexChanged(object sender, EventArgs e)
+        private void UserControl4_MouseHover(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserControl4_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            cate_edt.Items.Clear();
+            cate_UC.Items.Clear();
+
+
+            data db = new data();
+            MySqlCommand cmd = new MySqlCommand("SELECT `Category` FROM `cat`", db.getConnection());
+            db.openConnection();
+            MySqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                String cats = rd.GetValue(0).ToString();
+                cate_UC.Items.Add(cats);
+                cate_edt.Items.Add(cats);
+            }
+            db.closeConnection();
         }
     }
 }

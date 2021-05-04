@@ -138,6 +138,8 @@ namespace SDL_csharp
             userControl41.BringToFront();
             userControl41.Show();
 
+
+
         }
 
         private void abt_Click(object sender, EventArgs e)
@@ -174,6 +176,11 @@ namespace SDL_csharp
             userControl61.Show();
             userControl61.BringToFront();
             
+
+        }
+
+        private void userControl21_Load_1(object sender, EventArgs e)
+        {
 
         }
     }

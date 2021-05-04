@@ -37,7 +37,6 @@ namespace SDL_csharp
             this.fillbox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.abt = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.fillbox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,13 +45,14 @@ namespace SDL_csharp
             this.order = new Guna.UI2.WinForms.Guna2Button();
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl51 = new SDL_csharp.UserControl5();
-            this.userControl11 = new SDL_csharp.UserControl1();
-            this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl61 = new SDL_csharp.UserControl6();
             this.userControl31 = new SDL_csharp.UserControl3();
+            this.userControl51 = new SDL_csharp.UserControl5();
+            this.userControl11 = new SDL_csharp.UserControl1();
+            this.userControl41 = new SDL_csharp.UserControl4();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -94,7 +94,7 @@ namespace SDL_csharp
             this.fillbox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox4.DisabledState.Parent = this.fillbox4;
             this.fillbox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox4.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox4.FocusedState.Parent = this.fillbox4;
             this.fillbox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -161,7 +161,7 @@ namespace SDL_csharp
             this.fillbox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox7.DisabledState.Parent = this.fillbox7;
             this.fillbox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox7.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox7.FocusedState.Parent = this.fillbox7;
             this.fillbox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -206,7 +206,7 @@ namespace SDL_csharp
             this.fillbox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox6.DisabledState.Parent = this.fillbox6;
             this.fillbox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox6.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox6.FocusedState.Parent = this.fillbox6;
             this.fillbox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -222,31 +222,9 @@ namespace SDL_csharp
             this.fillbox6.TabIndex = 12;
             this.fillbox6.TextChanged += new System.EventHandler(this.fillbox6_TextChanged);
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2Button1.BackColor = System.Drawing.SystemColors.Window;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 85);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(253, 45);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "Home";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(99)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
@@ -277,7 +255,7 @@ namespace SDL_csharp
             this.fillbox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox3.DisabledState.Parent = this.fillbox3;
             this.fillbox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox3.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox3.FocusedState.Parent = this.fillbox3;
             this.fillbox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -304,7 +282,7 @@ namespace SDL_csharp
             this.fillbox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox2.DisabledState.Parent = this.fillbox2;
             this.fillbox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox2.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox2.FocusedState.Parent = this.fillbox2;
             this.fillbox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -331,7 +309,7 @@ namespace SDL_csharp
             this.fillbox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.fillbox1.DisabledState.Parent = this.fillbox1;
             this.fillbox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fillbox1.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.fillbox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.fillbox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox1.FocusedState.Parent = this.fillbox1;
             this.fillbox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -404,20 +382,71 @@ namespace SDL_csharp
             this.add.Text = "Add Items";
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.guna2Button1.BackColor = System.Drawing.SystemColors.Window;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 85);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(253, 45);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "Home";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
-            this.dashboard.Controls.Add(this.userControl51);
-            this.dashboard.Controls.Add(this.userControl11);
-            this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Controls.Add(this.userControl21);
             this.dashboard.Controls.Add(this.userControl61);
             this.dashboard.Controls.Add(this.userControl31);
+            this.dashboard.Controls.Add(this.userControl51);
+            this.dashboard.Controls.Add(this.userControl11);
+            this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Location = new System.Drawing.Point(254, 0);
             this.dashboard.Name = "dashboard";
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl21.Location = new System.Drawing.Point(-1, -1);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(589, 450);
+            this.userControl21.TabIndex = 9;
+            this.userControl21.Load += new System.EventHandler(this.userControl21_Load_1);
+            // 
+            // userControl61
+            // 
+            this.userControl61.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl61.Location = new System.Drawing.Point(0, 0);
+            this.userControl61.Name = "userControl61";
+            this.userControl61.Size = new System.Drawing.Size(590, 450);
+            this.userControl61.TabIndex = 13;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl31.Location = new System.Drawing.Point(-1, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(590, 450);
+            this.userControl31.TabIndex = 12;
             // 
             // userControl51
             // 
@@ -444,34 +473,6 @@ namespace SDL_csharp
             this.userControl41.Name = "userControl41";
             this.userControl41.Size = new System.Drawing.Size(590, 450);
             this.userControl41.TabIndex = 14;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl21.Location = new System.Drawing.Point(-1, -1);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(589, 450);
-            this.userControl21.TabIndex = 9;
-            // 
-            // userControl61
-            // 
-            this.userControl61.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl61.Location = new System.Drawing.Point(0, 0);
-            this.userControl61.Name = "userControl61";
-            this.userControl61.Size = new System.Drawing.Size(590, 450);
-            this.userControl61.TabIndex = 13;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(-1, 0);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
             // 
             // contents
             // 

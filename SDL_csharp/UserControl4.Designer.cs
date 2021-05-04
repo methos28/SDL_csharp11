@@ -241,7 +241,6 @@ namespace SDL_csharp
             this.cate_edt.ShadowDecoration.Parent = this.cate_edt;
             this.cate_edt.Size = new System.Drawing.Size(200, 36);
             this.cate_edt.TabIndex = 21;
-            this.cate_edt.SelectedIndexChanged += new System.EventHandler(this.cate_edt_SelectedIndexChanged);
             // 
             // UserControl4
             // 
@@ -263,7 +262,9 @@ namespace SDL_csharp
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.Name = "UserControl4";
             this.Size = new System.Drawing.Size(590, 450);
-            this.Load += new System.EventHandler(this.UserControl4_Load);
+            this.Load += new System.EventHandler(this.UserControl4_Load_1);
+            this.Leave += new System.EventHandler(this.UserControl4_MouseHover);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.UserControl4_MouseDoubleClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
