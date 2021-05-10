@@ -517,6 +517,7 @@ namespace SDL_csharp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.cartbox);
             this.Controls.Add(this.tct);
             this.Controls.Add(this.gstp);
             this.Controls.Add(this.ttlp);
@@ -530,7 +531,6 @@ namespace SDL_csharp
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.cartbox);
             this.Controls.Add(this.cate_UC);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.listBox1);

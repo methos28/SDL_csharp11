@@ -57,12 +57,14 @@ namespace SDL_csharp
             {
                 MessageBox.Show("Error!");
             }
-            db.closeConnection();
 
-            db.openConnection();
             MySqlCommand cmdx = new MySqlCommand("INSERT INTO cat(Category) SELECT DISTINCT Catagory FROM foodorder WHERE Catagory NOT IN(SELECT Category FROM cat) ", db.getConnection());
             cmdx.ExecuteNonQuery();
+
             db.closeConnection();
+
+
+
 
         }
 

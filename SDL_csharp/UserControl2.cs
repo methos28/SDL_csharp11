@@ -120,17 +120,17 @@ namespace SDL_csharp
             // Verifying Every Value and adding to GridviewBox Start
             //
             //
-            if (quantity_t.Text == "" || quantity_t.Text == "0")
+            if ( textBox1.Text == "")
+            {
+                MessageBox.Show(" You Havent Selected anything ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+            }
+            else if (quantity_t.Text == "" || quantity_t.Text == "0")
             {
                 MessageBox.Show(" Cart Quantity cant be Empty/0 ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (total_t.Text == "")
             {
                 MessageBox.Show(" You Havent Selected anything ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (textBox1.Text == "")
-            {
-                MessageBox.Show(" You Havent Selected anything ","Info" ,MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -151,7 +151,7 @@ namespace SDL_csharp
             //Grand Total LABLE
             //
            
-            if(total_t.Text != "" || total_t.Text != "0")
+            if(quantity_t.Text != "" || quantity_t.Text != "0")
             {
                 
                 int ttl = int.Parse(total_t.Text);

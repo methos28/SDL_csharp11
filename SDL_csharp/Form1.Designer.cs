@@ -139,6 +139,7 @@ namespace SDL_csharp
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox2.Location = new System.Drawing.Point(30, 206);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(232, 2);
