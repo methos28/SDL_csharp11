@@ -171,16 +171,6 @@ namespace SDL_csharp
         {
             //Removing Rows on REMOVE BUTTON CLICK
 
-            //try
-            //{
-            //    cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
-
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("There is nothing to Remove ", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-            //}
             try
             {
                 cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
