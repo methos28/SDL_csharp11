@@ -407,12 +407,12 @@ namespace SDL_csharp
             // dashboard
             // 
             this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Controls.Add(this.userControl21);
             this.dashboard.Controls.Add(this.userControl61);
             this.dashboard.Controls.Add(this.userControl31);
             this.dashboard.Controls.Add(this.userControl51);
             this.dashboard.Controls.Add(this.userControl11);
-            this.dashboard.Controls.Add(this.userControl41);
             this.dashboard.Location = new System.Drawing.Point(254, 0);
             this.dashboard.Name = "dashboard";
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
