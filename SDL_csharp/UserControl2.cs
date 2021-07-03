@@ -17,7 +17,7 @@ namespace SDL_csharp
         }
         double amt;
         double total = 0;
-        int i = 138;  
+          
         double gst = 0;
         double gstr;
         double gst_click;
@@ -141,32 +141,24 @@ namespace SDL_csharp
                 cartbox.Rows[r].Cells[2].Value = quantity_t.Text;
                 cartbox.Rows[r].Cells[3].Value = total_t.Text;
 
-            }
-            //
-            //
-            //END
-
-
-            //
-            //Grand Total LABLE
-            //
-           
-            if(quantity_t.Text != "" || quantity_t.Text != "0")
-            {
                 
+
+
+                //Grand Total LABLE
+
                 int ttl = int.Parse(total_t.Text);
                 total = total + ttl;
                 gst = total * 0.05;
                 grand = total + gst;
-                gstp.Text =  Convert.ToString(gst);
-                ttlp.Text =  Convert.ToString(total);
-                tct.Text =  Convert.ToString(grand);
+                gstp.Text = Convert.ToString(gst);
+                ttlp.Text = Convert.ToString(total);
+                tct.Text = Convert.ToString(grand);
+               
+                // END
+               
 
             }
 
-            //
-            // END
-            //
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -179,18 +171,19 @@ namespace SDL_csharp
         {
             //Removing Rows on REMOVE BUTTON CLICK
 
+            //try
+            //{
+            //    cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
+
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("There is nothing to Remove ", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            //}
             try
             {
                 cartbox.Rows.RemoveAt(this.cartbox.SelectedRows[0].Index);
-
-            }
-            catch
-            {
-                MessageBox.Show("Unexpected Error ", "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-            }
-            if(tct.Text != "" || tct.Text != "0")
-            {
                 total = Convert.ToDouble(int.Parse(ttlp.Text) - amt);
                 ttlp.Text = Convert.ToString(total);
                 gstr = total * 0.05;
@@ -199,7 +192,10 @@ namespace SDL_csharp
                 double grnd = double.Parse(tct.Text) - tcp;
                 tct.Text =  Convert.ToString(grnd);
             }
-
+            catch
+            {
+                MessageBox.Show("Nothing to remove", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
  
         private void cartbox_Leave(object sender, EventArgs e)
@@ -220,7 +216,9 @@ namespace SDL_csharp
             }
             else
             {
-                i++;
+                Random rn = new Random();
+
+                string i = "B_"+rn.Next().ToString();
                 print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
                 print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : " + DateTime.Now.TimeOfDay.ToString();
                 print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
