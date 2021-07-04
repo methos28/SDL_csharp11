@@ -115,10 +115,8 @@ namespace SDL_csharp
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            //
-            //
+
             // Verifying Every Value and adding to GridviewBox Start
-            //
             //
             if ( textBox1.Text == "")
             {
@@ -241,6 +239,25 @@ namespace SDL_csharp
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UserControl2_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            
+            cate_UC.Items.Clear();
+
+
+            data db = new data();
+            MySqlCommand cmd = new MySqlCommand("SELECT `Category` FROM `cat`", db.getConnection());
+            db.openConnection();
+            MySqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                String cats = rd.GetValue(0).ToString();
+                cate_UC.Items.Add(cats);
+                
+            }
+            db.closeConnection();
         }
     }
 }

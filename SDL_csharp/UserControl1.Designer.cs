@@ -93,6 +93,7 @@ namespace SDL_csharp
             this.cost_t.Name = "cost_t";
             this.cost_t.Size = new System.Drawing.Size(186, 33);
             this.cost_t.TabIndex = 4;
+            this.cost_t.TextChanged += new System.EventHandler(this.cost_t_TextChanged);
             // 
             // add_b
             // 

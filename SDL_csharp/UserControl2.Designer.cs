@@ -541,6 +541,7 @@ namespace SDL_csharp
             this.Size = new System.Drawing.Size(590, 450);
             this.Load += new System.EventHandler(this.UserControl2_Load);
             this.Leave += new System.EventHandler(this.UserControl2_Leave);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.UserControl2_MouseDoubleClick);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantity_t)).EndInit();

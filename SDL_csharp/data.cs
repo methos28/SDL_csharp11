@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 
 namespace SDL_csharp
@@ -19,6 +20,10 @@ namespace SDL_csharp
             {
                 Con.Open();
             }
+            else
+            {
+                MessageBox.Show("Trouble Connecting Database", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         public void closeConnection()
@@ -27,7 +32,10 @@ namespace SDL_csharp
             {
                 Con.Close();
             }
-
+            else
+            {
+                MessageBox.Show("Trouble Disconnecting Database", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         public MySqlConnection getConnection()

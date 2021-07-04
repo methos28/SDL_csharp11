@@ -80,6 +80,15 @@ namespace SDL_csharp
             name_t.Clear();
             cost_t.Clear();
         }
+
+        private void cost_t_TextChanged(object sender, EventArgs e)
+        {
+            if(System.Text.RegularExpressions.Regex.IsMatch(cost_t.Text, "^[a-zA-Z ]"))
+            {
+                MessageBox.Show("Enter Only in Numerics", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cost_t.Text = "";
+            }
+        }
     }
     
 }
