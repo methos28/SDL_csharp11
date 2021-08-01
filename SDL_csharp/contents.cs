@@ -157,9 +157,18 @@ namespace SDL_csharp
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Form1 frm = new Form1();
-            frm.Show();
+
+            DialogResult d;
+            d = MessageBox.Show("Are you sure ?", "Info", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (d == DialogResult.Yes)
+            {
+                this.Hide();
+                frm.Show();
+            }
+            
+            
 
 
         }
