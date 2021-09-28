@@ -34,13 +34,13 @@ namespace SDL_csharp
             this.fillbox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.home = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControl22 = new SDL_csharp.UserControl2();
+            this.userControl31 = new SDL_csharp.UserControl3();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.order = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fillbox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.userControl31 = new SDL_csharp.UserControl3();
-            this.userControl22 = new SDL_csharp.UserControl2();
             this.dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -128,9 +128,28 @@ namespace SDL_csharp
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 3;
             // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl22.Location = new System.Drawing.Point(1, 0);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(590, 450);
+            this.userControl22.TabIndex = 13;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userControl31.Location = new System.Drawing.Point(1, 1);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(590, 450);
+            this.userControl31.TabIndex = 12;
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(64)))), ((int)(((byte)(99)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
@@ -209,25 +228,6 @@ namespace SDL_csharp
             this.fillbox2.ShadowDecoration.Parent = this.fillbox2;
             this.fillbox2.Size = new System.Drawing.Size(10, 45);
             this.fillbox2.TabIndex = 5;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(1, 1);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
-            // 
-            // userControl22
-            // 
-            this.userControl22.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl22.Location = new System.Drawing.Point(1, 0);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(590, 450);
-            this.userControl22.TabIndex = 13;
             // 
             // employee
             // 

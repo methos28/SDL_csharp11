@@ -47,12 +47,12 @@ namespace SDL_csharp
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
+            this.userControl41 = new SDL_csharp.UserControl4();
             this.userControl21 = new SDL_csharp.UserControl2();
             this.userControl61 = new SDL_csharp.UserControl6();
             this.userControl31 = new SDL_csharp.UserControl3();
             this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl11 = new SDL_csharp.UserControl1();
-            this.userControl41 = new SDL_csharp.UserControl4();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
@@ -79,7 +79,7 @@ namespace SDL_csharp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(256, 449);
+            this.panel1.Size = new System.Drawing.Size(256, 553);
             this.panel1.TabIndex = 0;
             // 
             // fillbox4
@@ -99,7 +99,7 @@ namespace SDL_csharp
             this.fillbox4.FocusedState.Parent = this.fillbox4;
             this.fillbox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox4.HoverState.Parent = this.fillbox4;
-            this.fillbox4.Location = new System.Drawing.Point(-4, 288);
+            this.fillbox4.Location = new System.Drawing.Point(-4, 340);
             this.fillbox4.Name = "fillbox4";
             this.fillbox4.PasswordChar = '\0';
             this.fillbox4.PlaceholderText = "";
@@ -119,7 +119,7 @@ namespace SDL_csharp
             this.add_emp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_emp.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.add_emp.HoverState.Parent = this.add_emp;
-            this.add_emp.Location = new System.Drawing.Point(0, 288);
+            this.add_emp.Location = new System.Drawing.Point(0, 340);
             this.add_emp.Name = "add_emp";
             this.add_emp.ShadowDecoration.Parent = this.add_emp;
             this.add_emp.Size = new System.Drawing.Size(253, 45);
@@ -141,7 +141,7 @@ namespace SDL_csharp
             this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(-1, 391);
+            this.guna2Button2.Location = new System.Drawing.Point(-1, 443);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(253, 45);
@@ -166,7 +166,7 @@ namespace SDL_csharp
             this.fillbox7.FocusedState.Parent = this.fillbox7;
             this.fillbox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox7.HoverState.Parent = this.fillbox7;
-            this.fillbox7.Location = new System.Drawing.Point(-4, 339);
+            this.fillbox7.Location = new System.Drawing.Point(-4, 391);
             this.fillbox7.Name = "fillbox7";
             this.fillbox7.PasswordChar = '\0';
             this.fillbox7.PlaceholderText = "";
@@ -186,7 +186,7 @@ namespace SDL_csharp
             this.abt.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abt.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.abt.HoverState.Parent = this.abt;
-            this.abt.Location = new System.Drawing.Point(0, 339);
+            this.abt.Location = new System.Drawing.Point(0, 391);
             this.abt.Name = "abt";
             this.abt.ShadowDecoration.Parent = this.abt;
             this.abt.Size = new System.Drawing.Size(253, 45);
@@ -211,7 +211,7 @@ namespace SDL_csharp
             this.fillbox6.FocusedState.Parent = this.fillbox6;
             this.fillbox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox6.HoverState.Parent = this.fillbox6;
-            this.fillbox6.Location = new System.Drawing.Point(-4, 84);
+            this.fillbox6.Location = new System.Drawing.Point(-4, 136);
             this.fillbox6.Name = "fillbox6";
             this.fillbox6.PasswordChar = '\0';
             this.fillbox6.PlaceholderText = "";
@@ -260,7 +260,7 @@ namespace SDL_csharp
             this.fillbox3.FocusedState.Parent = this.fillbox3;
             this.fillbox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox3.HoverState.Parent = this.fillbox3;
-            this.fillbox3.Location = new System.Drawing.Point(-4, 237);
+            this.fillbox3.Location = new System.Drawing.Point(-4, 289);
             this.fillbox3.Name = "fillbox3";
             this.fillbox3.PasswordChar = '\0';
             this.fillbox3.PlaceholderText = "";
@@ -287,7 +287,7 @@ namespace SDL_csharp
             this.fillbox2.FocusedState.Parent = this.fillbox2;
             this.fillbox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox2.HoverState.Parent = this.fillbox2;
-            this.fillbox2.Location = new System.Drawing.Point(-4, 186);
+            this.fillbox2.Location = new System.Drawing.Point(-4, 238);
             this.fillbox2.Name = "fillbox2";
             this.fillbox2.PasswordChar = '\0';
             this.fillbox2.PlaceholderText = "";
@@ -314,7 +314,7 @@ namespace SDL_csharp
             this.fillbox1.FocusedState.Parent = this.fillbox1;
             this.fillbox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox1.HoverState.Parent = this.fillbox1;
-            this.fillbox1.Location = new System.Drawing.Point(-4, 135);
+            this.fillbox1.Location = new System.Drawing.Point(-4, 187);
             this.fillbox1.Name = "fillbox1";
             this.fillbox1.PasswordChar = '\0';
             this.fillbox1.PlaceholderText = "";
@@ -334,7 +334,7 @@ namespace SDL_csharp
             this.order.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.order.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.order.HoverState.Parent = this.order;
-            this.order.Location = new System.Drawing.Point(2, 186);
+            this.order.Location = new System.Drawing.Point(2, 238);
             this.order.Name = "order";
             this.order.ShadowDecoration.Parent = this.order;
             this.order.Size = new System.Drawing.Size(251, 45);
@@ -352,7 +352,7 @@ namespace SDL_csharp
             this.delete_itm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_itm.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.delete_itm.HoverState.Parent = this.delete_itm;
-            this.delete_itm.Location = new System.Drawing.Point(0, 237);
+            this.delete_itm.Location = new System.Drawing.Point(0, 289);
             this.delete_itm.Name = "delete_itm";
             this.delete_itm.ShadowDecoration.Parent = this.delete_itm;
             this.delete_itm.Size = new System.Drawing.Size(253, 45);
@@ -374,7 +374,7 @@ namespace SDL_csharp
             this.add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.add.HoverState.Parent = this.add;
-            this.add.Location = new System.Drawing.Point(0, 135);
+            this.add.Location = new System.Drawing.Point(0, 187);
             this.add.Name = "add";
             this.add.ShadowDecoration.Parent = this.add;
             this.add.Size = new System.Drawing.Size(253, 45);
@@ -396,7 +396,7 @@ namespace SDL_csharp
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 85);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 137);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(253, 45);
@@ -418,6 +418,15 @@ namespace SDL_csharp
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
             this.dashboard.Size = new System.Drawing.Size(592, 450);
             this.dashboard.TabIndex = 1;
+            // 
+            // userControl41
+            // 
+            this.userControl41.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
+            this.userControl41.Location = new System.Drawing.Point(-2, 0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(590, 450);
+            this.userControl41.TabIndex = 14;
             // 
             // userControl21
             // 
@@ -465,20 +474,11 @@ namespace SDL_csharp
             this.userControl11.Size = new System.Drawing.Size(590, 450);
             this.userControl11.TabIndex = 8;
             // 
-            // userControl41
-            // 
-            this.userControl41.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.userControl41.Location = new System.Drawing.Point(0, 0);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(590, 450);
-            this.userControl41.TabIndex = 14;
-            // 
             // contents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 449);
+            this.ClientSize = new System.Drawing.Size(949, 553);
             this.Controls.Add(this.dashboard);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

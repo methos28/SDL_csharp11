@@ -70,5 +70,10 @@ namespace SDL_csharp
         {
 
         }
+
+        private void eml_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

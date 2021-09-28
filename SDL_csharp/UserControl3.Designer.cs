@@ -39,9 +39,9 @@ namespace SDL_csharp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBox1.Image = global::SDL_csharp.Properties.Resources.Restaurant1;
-            this.pictureBox1.Location = new System.Drawing.Point(-35, -40);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(625, 490);
+            this.pictureBox1.Size = new System.Drawing.Size(698, 553);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -53,7 +53,7 @@ namespace SDL_csharp
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControl3";
-            this.Size = new System.Drawing.Size(590, 450);
+            this.Size = new System.Drawing.Size(698, 553);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

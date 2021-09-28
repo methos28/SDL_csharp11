@@ -82,6 +82,8 @@ namespace SDL_csharp
             // 
             // itemname
             // 
+            this.itemname.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.itemname.AutoSize = true;
             this.itemname.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.itemname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -93,6 +95,8 @@ namespace SDL_csharp
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -104,6 +108,8 @@ namespace SDL_csharp
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -116,6 +122,8 @@ namespace SDL_csharp
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -123,35 +131,41 @@ namespace SDL_csharp
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(12, 88);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(170, 325);
+            this.listBox1.Size = new System.Drawing.Size(170, 359);
             this.listBox1.TabIndex = 11;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.textBox1.Location = new System.Drawing.Point(3, 33);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 36);
+            this.textBox1.Size = new System.Drawing.Size(226, 36);
             this.textBox1.TabIndex = 6;
             // 
             // total_t
             // 
+            this.total_t.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.total_t.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.total_t.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.total_t.Location = new System.Drawing.Point(252, 104);
             this.total_t.Multiline = true;
             this.total_t.Name = "total_t";
-            this.total_t.Size = new System.Drawing.Size(141, 35);
+            this.total_t.Size = new System.Drawing.Size(249, 35);
             this.total_t.TabIndex = 8;
             this.total_t.Text = "0";
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.textBox2);
             this.guna2Panel1.Controls.Add(this.quantity_t);
@@ -164,23 +178,27 @@ namespace SDL_csharp
             this.guna2Panel1.Location = new System.Drawing.Point(188, 3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(399, 147);
+            this.guna2Panel1.Size = new System.Drawing.Size(507, 147);
             this.guna2Panel1.TabIndex = 9;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.textBox2.Location = new System.Drawing.Point(252, 34);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 35);
+            this.textBox2.Size = new System.Drawing.Size(249, 35);
             this.textBox2.TabIndex = 11;
             // 
             // quantity_t
             // 
+            this.quantity_t.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.quantity_t.BackColor = System.Drawing.Color.Transparent;
             this.quantity_t.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.quantity_t.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -198,13 +216,15 @@ namespace SDL_csharp
             this.quantity_t.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantity_t.Name = "quantity_t";
             this.quantity_t.ShadowDecoration.Parent = this.quantity_t;
-            this.quantity_t.Size = new System.Drawing.Size(141, 34);
+            this.quantity_t.Size = new System.Drawing.Size(153, 34);
             this.quantity_t.TabIndex = 10;
             this.quantity_t.ValueChanged += new System.EventHandler(this.quantity_t_ValueChanged);
             this.quantity_t.Leave += new System.EventHandler(this.quantity_t_Leave);
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
@@ -237,6 +257,7 @@ namespace SDL_csharp
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Button1.BorderThickness = 1;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
@@ -245,7 +266,7 @@ namespace SDL_csharp
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(188, 369);
+            this.guna2Button1.Location = new System.Drawing.Point(191, 496);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(102, 44);
@@ -255,6 +276,7 @@ namespace SDL_csharp
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Button2.BorderThickness = 1;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
@@ -263,7 +285,7 @@ namespace SDL_csharp
             this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(470, 369);
+            this.guna2Button2.Location = new System.Drawing.Point(574, 496);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(115, 44);
@@ -273,6 +295,8 @@ namespace SDL_csharp
             // 
             // guna2Button3
             // 
+            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.guna2Button3.BorderThickness = 1;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
@@ -284,17 +308,18 @@ namespace SDL_csharp
             this.guna2Button3.Location = new System.Drawing.Point(472, 159);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(109, 31);
+            this.guna2Button3.Size = new System.Drawing.Size(217, 31);
             this.guna2Button3.TabIndex = 15;
             this.guna2Button3.Text = "Add To Cart";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label4.Location = new System.Drawing.Point(259, 420);
+            this.label4.Location = new System.Drawing.Point(313, 523);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 25);
             this.label4.TabIndex = 16;
@@ -302,10 +327,11 @@ namespace SDL_csharp
             // 
             // rs1
             // 
+            this.rs1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.rs1.AutoSize = true;
             this.rs1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.rs1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.rs1.Location = new System.Drawing.Point(396, 420);
+            this.rs1.Location = new System.Drawing.Point(450, 523);
             this.rs1.Name = "rs1";
             this.rs1.Size = new System.Drawing.Size(45, 25);
             this.rs1.TabIndex = 17;
@@ -340,6 +366,7 @@ namespace SDL_csharp
             this.cartbox.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.cartbox.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.cartbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cartbox.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.cartbox.BackgroundColor = System.Drawing.Color.White;
             this.cartbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -369,12 +396,12 @@ namespace SDL_csharp
             this.cartbox.DefaultCellStyle = dataGridViewCellStyle3;
             this.cartbox.EnableHeadersVisualStyles = false;
             this.cartbox.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.cartbox.Location = new System.Drawing.Point(187, 196);
+            this.cartbox.Location = new System.Drawing.Point(196, 247);
             this.cartbox.Name = "cartbox";
             this.cartbox.ReadOnly = true;
             this.cartbox.RowHeadersVisible = false;
             this.cartbox.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cartbox.Size = new System.Drawing.Size(398, 160);
+            this.cartbox.Size = new System.Drawing.Size(493, 192);
             this.cartbox.TabIndex = 12;
             this.cartbox.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.cartbox.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -403,55 +430,60 @@ namespace SDL_csharp
             // 
             // ttl
             // 
+            this.ttl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ttl.AutoSize = true;
-            this.ttl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ttl.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.ttl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.ttl.Location = new System.Drawing.Point(339, 369);
+            this.ttl.Location = new System.Drawing.Point(386, 472);
             this.ttl.Name = "ttl";
-            this.ttl.Size = new System.Drawing.Size(42, 20);
+            this.ttl.Size = new System.Drawing.Size(49, 21);
             this.ttl.TabIndex = 18;
             this.ttl.Text = "Total";
             this.ttl.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label6.Location = new System.Drawing.Point(326, 393);
+            this.label6.Location = new System.Drawing.Point(362, 496);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 20);
+            this.label6.Size = new System.Drawing.Size(73, 21);
             this.label6.TabIndex = 19;
             this.label6.Text = "GST(5%)";
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label7.Location = new System.Drawing.Point(387, 369);
+            this.label7.Location = new System.Drawing.Point(441, 472);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(14, 20);
+            this.label7.Size = new System.Drawing.Size(15, 21);
             this.label7.TabIndex = 20;
             this.label7.Text = "-";
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label8.Location = new System.Drawing.Point(387, 393);
+            this.label8.Location = new System.Drawing.Point(441, 496);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(14, 20);
+            this.label8.Size = new System.Drawing.Size(15, 21);
             this.label8.TabIndex = 21;
             this.label8.Text = "-";
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label9.Location = new System.Drawing.Point(387, 420);
+            this.label9.Location = new System.Drawing.Point(441, 523);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(14, 20);
             this.label9.TabIndex = 22;
@@ -459,54 +491,59 @@ namespace SDL_csharp
             // 
             // rs
             // 
+            this.rs.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.rs.AutoSize = true;
-            this.rs.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rs.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.rs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.rs.Location = new System.Drawing.Point(397, 393);
+            this.rs.Location = new System.Drawing.Point(451, 496);
             this.rs.Name = "rs";
-            this.rs.Size = new System.Drawing.Size(28, 20);
+            this.rs.Size = new System.Drawing.Size(30, 21);
             this.rs.TabIndex = 23;
             this.rs.Text = "Rs.";
             // 
             // ttlp
             // 
+            this.ttlp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ttlp.AutoSize = true;
-            this.ttlp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ttlp.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.ttlp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.ttlp.Location = new System.Drawing.Point(418, 369);
+            this.ttlp.Location = new System.Drawing.Point(472, 472);
             this.ttlp.Name = "ttlp";
-            this.ttlp.Size = new System.Drawing.Size(17, 20);
+            this.ttlp.Size = new System.Drawing.Size(19, 21);
             this.ttlp.TabIndex = 24;
             this.ttlp.Text = "0";
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.label5.Location = new System.Drawing.Point(397, 369);
+            this.label5.Location = new System.Drawing.Point(451, 472);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 20);
+            this.label5.Size = new System.Drawing.Size(30, 21);
             this.label5.TabIndex = 25;
             this.label5.Text = "Rs.";
             // 
             // gstp
             // 
+            this.gstp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.gstp.AutoSize = true;
-            this.gstp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gstp.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.gstp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.gstp.Location = new System.Drawing.Point(418, 393);
+            this.gstp.Location = new System.Drawing.Point(472, 496);
             this.gstp.Name = "gstp";
-            this.gstp.Size = new System.Drawing.Size(17, 20);
+            this.gstp.Size = new System.Drawing.Size(19, 21);
             this.gstp.TabIndex = 26;
             this.gstp.Text = "0";
             // 
             // tct
             // 
+            this.tct.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tct.AutoSize = true;
             this.tct.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.tct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.tct.Location = new System.Drawing.Point(435, 420);
+            this.tct.Location = new System.Drawing.Point(489, 523);
             this.tct.Name = "tct";
             this.tct.Size = new System.Drawing.Size(24, 25);
             this.tct.TabIndex = 27;
@@ -538,7 +575,7 @@ namespace SDL_csharp
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rs1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(590, 450);
+            this.Size = new System.Drawing.Size(698, 553);
             this.Load += new System.EventHandler(this.UserControl2_Load);
             this.Leave += new System.EventHandler(this.UserControl2_Leave);
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.UserControl2_MouseDoubleClick);
