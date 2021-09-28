@@ -46,16 +46,14 @@ namespace SDL_csharp
             this.delete_itm = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl41 = new SDL_csharp.UserControl4();
-            this.userControl21 = new SDL_csharp.UserControl2();
-            this.userControl61 = new SDL_csharp.UserControl6();
-            this.userControl31 = new SDL_csharp.UserControl3();
-            this.userControl51 = new SDL_csharp.UserControl5();
             this.userControl11 = new SDL_csharp.UserControl1();
+            this.userControl21 = new SDL_csharp.UserControl2();
+            this.userControl31 = new SDL_csharp.UserControl3();
+            this.userControl41 = new SDL_csharp.UserControl4();
+            this.userControl51 = new SDL_csharp.UserControl5();
+            this.userControl61 = new SDL_csharp.UserControl6();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.dashboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,7 +77,7 @@ namespace SDL_csharp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(256, 553);
+            this.panel1.Size = new System.Drawing.Size(252, 553);
             this.panel1.TabIndex = 0;
             // 
             // fillbox4
@@ -404,82 +402,66 @@ namespace SDL_csharp
             this.guna2Button1.Text = "Home";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // dashboard
+            // userControl11
             // 
-            this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
-            this.dashboard.Controls.Add(this.userControl41);
-            this.dashboard.Controls.Add(this.userControl21);
-            this.dashboard.Controls.Add(this.userControl61);
-            this.dashboard.Controls.Add(this.userControl31);
-            this.dashboard.Controls.Add(this.userControl51);
-            this.dashboard.Controls.Add(this.userControl11);
-            this.dashboard.Location = new System.Drawing.Point(254, 0);
-            this.dashboard.Name = "dashboard";
-            this.dashboard.ShadowDecoration.Parent = this.dashboard;
-            this.dashboard.Size = new System.Drawing.Size(592, 450);
-            this.dashboard.TabIndex = 1;
+            this.userControl11.BackColor = System.Drawing.SystemColors.Control;
+            this.userControl11.Location = new System.Drawing.Point(250, 0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(701, 553);
+            this.userControl11.TabIndex = 1;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl21.Location = new System.Drawing.Point(250, 0);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(701, 553);
+            this.userControl21.TabIndex = 2;
+            // 
+            // userControl31
+            // 
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.Location = new System.Drawing.Point(250, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(701, 553);
+            this.userControl31.TabIndex = 3;
             // 
             // userControl41
             // 
             this.userControl41.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.userControl41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.userControl41.Location = new System.Drawing.Point(-2, 0);
+            this.userControl41.Location = new System.Drawing.Point(250, 0);
             this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(590, 450);
-            this.userControl41.TabIndex = 14;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl21.Location = new System.Drawing.Point(-1, -1);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(589, 450);
-            this.userControl21.TabIndex = 9;
-            this.userControl21.Load += new System.EventHandler(this.userControl21_Load_1);
-            // 
-            // userControl61
-            // 
-            this.userControl61.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl61.Location = new System.Drawing.Point(0, 0);
-            this.userControl61.Name = "userControl61";
-            this.userControl61.Size = new System.Drawing.Size(590, 450);
-            this.userControl61.TabIndex = 13;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(-1, 0);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
+            this.userControl41.Size = new System.Drawing.Size(701, 553);
+            this.userControl41.TabIndex = 4;
             // 
             // userControl51
             // 
             this.userControl51.BackColor = System.Drawing.Color.White;
-            this.userControl51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl51.Location = new System.Drawing.Point(-2, -1);
+            this.userControl51.Location = new System.Drawing.Point(250, 0);
             this.userControl51.Name = "userControl51";
-            this.userControl51.Size = new System.Drawing.Size(590, 450);
-            this.userControl51.TabIndex = 11;
+            this.userControl51.Size = new System.Drawing.Size(698, 553);
+            this.userControl51.TabIndex = 5;
             // 
-            // userControl11
+            // userControl61
             // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.Control;
-            this.userControl11.Location = new System.Drawing.Point(-1, 0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(590, 450);
-            this.userControl11.TabIndex = 8;
+            this.userControl61.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.userControl61.Location = new System.Drawing.Point(250, 0);
+            this.userControl61.Name = "userControl61";
+            this.userControl61.Size = new System.Drawing.Size(701, 553);
+            this.userControl61.TabIndex = 6;
             // 
             // contents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 553);
-            this.Controls.Add(this.dashboard);
+            this.Controls.Add(this.userControl61);
+            this.Controls.Add(this.userControl51);
+            this.Controls.Add(this.userControl41);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "contents";
@@ -490,7 +472,6 @@ namespace SDL_csharp
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.dashboard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -498,7 +479,6 @@ namespace SDL_csharp
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Panel dashboard;
         private Guna.UI2.WinForms.Guna2Button add;
         private Guna.UI2.WinForms.Guna2Button order;
         private Guna.UI2.WinForms.Guna2Button delete_itm;
@@ -511,14 +491,14 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox fillbox7;
         private Guna.UI2.WinForms.Guna2Button abt;
-        private UserControl1 userControl11;
-        private UserControl2 userControl21;
-        private UserControl3 userControl31;
-        private UserControl5 userControl51;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2TextBox fillbox4;
         private Guna.UI2.WinForms.Guna2Button add_emp;
-        private UserControl6 userControl61;
+        private UserControl1 userControl11;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
         private UserControl4 userControl41;
+        private UserControl5 userControl51;
+        private UserControl6 userControl61;
     }
 }

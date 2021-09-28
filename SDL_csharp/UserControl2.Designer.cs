@@ -32,6 +32,7 @@ namespace SDL_csharp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cat_combo = new System.Windows.Forms.Label();
             this.itemname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -129,9 +130,9 @@ namespace SDL_csharp
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(12, 88);
+            this.listBox1.Location = new System.Drawing.Point(12, 96);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(170, 359);
+            this.listBox1.Size = new System.Drawing.Size(170, 444);
             this.listBox1.TabIndex = 11;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -142,10 +143,10 @@ namespace SDL_csharp
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(56)))), ((int)(((byte)(139)))));
-            this.textBox1.Location = new System.Drawing.Point(3, 33);
+            this.textBox1.Location = new System.Drawing.Point(3, 34);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 36);
+            this.textBox1.Size = new System.Drawing.Size(226, 38);
             this.textBox1.TabIndex = 6;
             // 
             // total_t
@@ -192,7 +193,7 @@ namespace SDL_csharp
             this.textBox2.Location = new System.Drawing.Point(252, 34);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 35);
+            this.textBox2.Size = new System.Drawing.Size(249, 38);
             this.textBox2.TabIndex = 11;
             // 
             // quantity_t
@@ -308,7 +309,7 @@ namespace SDL_csharp
             this.guna2Button3.Location = new System.Drawing.Point(472, 159);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(217, 31);
+            this.guna2Button3.Size = new System.Drawing.Size(217, 41);
             this.guna2Button3.TabIndex = 15;
             this.guna2Button3.Text = "Add To Cart";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -399,6 +400,14 @@ namespace SDL_csharp
             this.cartbox.Location = new System.Drawing.Point(196, 247);
             this.cartbox.Name = "cartbox";
             this.cartbox.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.cartbox.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.cartbox.RowHeadersVisible = false;
             this.cartbox.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.cartbox.Size = new System.Drawing.Size(493, 192);
