@@ -15,12 +15,13 @@ namespace SDL_csharp
     
     public partial class Form1 : Form
     {
-
+        String lgn;
 
 
         public Form1()
         {
             InitializeComponent();
+            
 
         }
 
@@ -29,64 +30,84 @@ namespace SDL_csharp
         private void button2_Click(object sender, EventArgs e)
         {
             sign_up sign = new sign_up();
-           
             sign.Show();
 
 
         }
 
 
-        //login Button
+        //login Button Functionality
         private void button1_Click(object sender, EventArgs e)
         {
             data db = new data();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM `dbs_personal` WHERE `username` = @usn and `Password` = @pswd and `login_type` = @login",db.getConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(); 
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM `dbs_personal` WHERE `username` = @usn and `Password` = @pswd and `login_type` = @login ", db.getConnection());
+            MySqlCommand cmdx = new MySqlCommand("SELECT `Username`,`login_type` FROM `dbs_personal` WHERE `Username` = @usn AND `login_type` = @login ", db.getConnection()); ;
             DataTable table = new DataTable();
+            
 
             db.openConnection();
             String username = textBox1.Text;
             String password = textBox2.Text;
             contents contents = new contents();
             String login = login_type.GetItemText(login_type.SelectedItem);
+            
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = password;
             cmd.Parameters.Add("@login", MySqlDbType.VarChar).Value = login;
+            cmdx.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
+            cmdx.Parameters.Add("@login", MySqlDbType.VarChar).Value = login;
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
             
+
+ 
             
             employee emp = new employee();
 
-            if (table.Rows.Count > 0)
-            {
-                if (login_type.SelectedIndex == 0)
+           
+           
+
+            
+                if (table.Rows.Count > 0)
                 {
-                        this.Hide();
-                        contents.Show();
+                
+                    if (login_type.SelectedIndex == 0)
+                    {
+                            this.Hide();
+                            contents.Show();
+                    }
+                    else
+                    {
+                            this.Hide();
+                            emp.Show();
+                    }
+
+
                 }
                 else
                 {
-                        this.Hide();
-                        emp.Show();
+                    if (cmdx.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Incorrect Username or Password");
+                    }
+                    else
+                    {
+
+                    MessageBox.Show("Wrong Login Type", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    }
+                        
+
                 }
 
-            }
-            else
-            {
-                MessageBox.Show("Incorrect Username or Password");
-
-            }
-           
 
             db.closeConnection();
 
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
+            
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
