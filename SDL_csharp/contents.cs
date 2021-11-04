@@ -35,15 +35,6 @@ namespace SDL_csharp
             userControl41.Hide();
             userControl51.Hide();
             userControl61.Hide();
-
-
-
-
-
-
-
-
-
         }
 
         private void add_Click(object sender, EventArgs e)
@@ -56,14 +47,6 @@ namespace SDL_csharp
             fillbox4.Hide();
             userControl11.Show();
             userControl11.BringToFront();
-
-
-
-
-            
-            
-           
-            
 
         }
 
@@ -78,9 +61,6 @@ namespace SDL_csharp
             userControl11.Hide();
             userControl21.Show();
             userControl21.BringToFront();
-        
-
-
         }
 
         private void controlpanel_Load(object sender, EventArgs e)

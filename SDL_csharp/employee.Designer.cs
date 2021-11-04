@@ -33,15 +33,13 @@ namespace SDL_csharp
             this.logout = new Guna.UI2.WinForms.Guna2Button();
             this.fillbox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.home = new Guna.UI2.WinForms.Guna2Button();
-            this.dashboard = new Guna.UI2.WinForms.Guna2Panel();
-            this.userControl22 = new SDL_csharp.UserControl2();
-            this.userControl31 = new SDL_csharp.UserControl3();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.order = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.fillbox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dashboard.SuspendLayout();
+            this.userControl21 = new SDL_csharp.UserControl2();
+            this.userControl31 = new SDL_csharp.UserControl3();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +58,7 @@ namespace SDL_csharp
             this.logout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout.ForeColor = System.Drawing.Color.Firebrick;
             this.logout.HoverState.Parent = this.logout;
-            this.logout.Location = new System.Drawing.Point(-1, 391);
+            this.logout.Location = new System.Drawing.Point(-1, 443);
             this.logout.Name = "logout";
             this.logout.ShadowDecoration.Parent = this.logout;
             this.logout.Size = new System.Drawing.Size(253, 45);
@@ -85,7 +83,7 @@ namespace SDL_csharp
             this.fillbox1.FocusedState.Parent = this.fillbox1;
             this.fillbox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox1.HoverState.Parent = this.fillbox1;
-            this.fillbox1.Location = new System.Drawing.Point(-4, 84);
+            this.fillbox1.Location = new System.Drawing.Point(-4, 136);
             this.fillbox1.Name = "fillbox1";
             this.fillbox1.PasswordChar = '\0';
             this.fillbox1.PlaceholderText = "";
@@ -109,43 +107,13 @@ namespace SDL_csharp
             this.home.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.home.HoverState.Parent = this.home;
-            this.home.Location = new System.Drawing.Point(0, 85);
+            this.home.Location = new System.Drawing.Point(0, 137);
             this.home.Name = "home";
             this.home.ShadowDecoration.Parent = this.home;
             this.home.Size = new System.Drawing.Size(253, 45);
             this.home.TabIndex = 13;
             this.home.Text = "Home";
             this.home.Click += new System.EventHandler(this.home_Click);
-            // 
-            // dashboard
-            // 
-            this.dashboard.BackColor = System.Drawing.Color.RoyalBlue;
-            this.dashboard.Controls.Add(this.userControl22);
-            this.dashboard.Controls.Add(this.userControl31);
-            this.dashboard.Location = new System.Drawing.Point(252, -1);
-            this.dashboard.Name = "dashboard";
-            this.dashboard.ShadowDecoration.Parent = this.dashboard;
-            this.dashboard.Size = new System.Drawing.Size(592, 450);
-            this.dashboard.TabIndex = 3;
-            // 
-            // userControl22
-            // 
-            this.userControl22.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.userControl22.Location = new System.Drawing.Point(1, 0);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(590, 450);
-            this.userControl22.TabIndex = 13;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl31.BackColor = System.Drawing.Color.White;
-            this.userControl31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl31.Location = new System.Drawing.Point(1, 1);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(590, 450);
-            this.userControl31.TabIndex = 12;
             // 
             // panel2
             // 
@@ -178,7 +146,7 @@ namespace SDL_csharp
             this.order.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.order.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.order.HoverState.Parent = this.order;
-            this.order.Location = new System.Drawing.Point(2, 134);
+            this.order.Location = new System.Drawing.Point(2, 186);
             this.order.Name = "order";
             this.order.ShadowDecoration.Parent = this.order;
             this.order.Size = new System.Drawing.Size(251, 45);
@@ -199,7 +167,7 @@ namespace SDL_csharp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(256, 449);
+            this.panel1.Size = new System.Drawing.Size(256, 553);
             this.panel1.TabIndex = 2;
             // 
             // fillbox2
@@ -219,7 +187,7 @@ namespace SDL_csharp
             this.fillbox2.FocusedState.Parent = this.fillbox2;
             this.fillbox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fillbox2.HoverState.Parent = this.fillbox2;
-            this.fillbox2.Location = new System.Drawing.Point(-4, 134);
+            this.fillbox2.Location = new System.Drawing.Point(-4, 186);
             this.fillbox2.Name = "fillbox2";
             this.fillbox2.PasswordChar = '\0';
             this.fillbox2.PlaceholderText = "";
@@ -229,20 +197,36 @@ namespace SDL_csharp
             this.fillbox2.Size = new System.Drawing.Size(10, 45);
             this.fillbox2.TabIndex = 5;
             // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.userControl21.Location = new System.Drawing.Point(256, 0);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(698, 553);
+            this.userControl21.TabIndex = 4;
+            // 
+            // userControl31
+            // 
+            this.userControl31.BackColor = System.Drawing.Color.White;
+            this.userControl31.Location = new System.Drawing.Point(255, 0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(698, 553);
+            this.userControl31.TabIndex = 5;
+            // 
             // employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 449);
-            this.Controls.Add(this.dashboard);
+            this.ClientSize = new System.Drawing.Size(949, 553);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl31);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "employee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.employee_FormClosing);
             this.Load += new System.EventHandler(this.employee_Load);
-            this.dashboard.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -254,13 +238,12 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2Button logout;
         private Guna.UI2.WinForms.Guna2TextBox fillbox1;
         private Guna.UI2.WinForms.Guna2Button home;
-        private UserControl3 userControl31;
-        private Guna.UI2.WinForms.Guna2Panel dashboard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button order;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox fillbox2;
-        private UserControl2 userControl22;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
     }
 }

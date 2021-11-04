@@ -48,9 +48,11 @@ namespace SDL_csharp
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.logintype = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,7 +108,7 @@ namespace SDL_csharp
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(78, 219);
+            this.label3.Location = new System.Drawing.Point(24, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 21);
             this.label3.TabIndex = 2;
@@ -128,30 +130,30 @@ namespace SDL_csharp
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label6.Location = new System.Drawing.Point(79, 271);
+            this.label6.Location = new System.Drawing.Point(24, 245);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 21);
+            this.label6.Size = new System.Drawing.Size(82, 21);
             this.label6.TabIndex = 4;
-            this.label6.Text = "PassWord";
+            this.label6.Text = "Password";
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox1.Location = new System.Drawing.Point(82, 242);
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.textBox1.Location = new System.Drawing.Point(28, 210);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(331, 20);
+            this.textBox1.Size = new System.Drawing.Size(331, 18);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.textBox2.Location = new System.Drawing.Point(82, 290);
+            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.textBox2.Location = new System.Drawing.Point(28, 268);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(331, 20);
+            this.textBox2.Size = new System.Drawing.Size(331, 18);
             this.textBox2.TabIndex = 8;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -216,7 +218,7 @@ namespace SDL_csharp
             "Admin",
             "Employee"});
             this.login_type.ItemsAppearance.Parent = this.login_type;
-            this.login_type.Location = new System.Drawing.Point(83, 338);
+            this.login_type.Location = new System.Drawing.Point(28, 345);
             this.login_type.Name = "login_type";
             this.login_type.ShadowDecoration.Parent = this.login_type;
             this.login_type.Size = new System.Drawing.Size(330, 36);
@@ -227,7 +229,7 @@ namespace SDL_csharp
             this.guna2Separator1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(82, 258);
+            this.guna2Separator1.Location = new System.Drawing.Point(27, 227);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(331, 10);
             this.guna2Separator1.TabIndex = 13;
@@ -237,7 +239,7 @@ namespace SDL_csharp
             this.guna2Separator2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator2.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator2.Location = new System.Drawing.Point(82, 307);
+            this.guna2Separator2.Location = new System.Drawing.Point(82, 316);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(331, 10);
             this.guna2Separator2.TabIndex = 14;
@@ -246,12 +248,30 @@ namespace SDL_csharp
             // 
             this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.textBox2);
+            this.guna2ShadowPanel1.Controls.Add(this.logintype);
+            this.guna2ShadowPanel1.Controls.Add(this.login_type);
+            this.guna2ShadowPanel1.Controls.Add(this.label6);
+            this.guna2ShadowPanel1.Controls.Add(this.label3);
+            this.guna2ShadowPanel1.Controls.Add(this.textBox1);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Separator1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(55, 31);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(383, 493);
             this.guna2ShadowPanel1.TabIndex = 15;
+            // 
+            // logintype
+            // 
+            this.logintype.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.logintype.AutoSize = true;
+            this.logintype.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.logintype.Location = new System.Drawing.Point(24, 318);
+            this.logintype.Name = "logintype";
+            this.logintype.Size = new System.Drawing.Size(92, 21);
+            this.logintype.TabIndex = 13;
+            this.logintype.Text = "Login Type";
             // 
             // Form1
             // 
@@ -261,16 +281,10 @@ namespace SDL_csharp
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(949, 553);
             this.Controls.Add(this.guna2Separator2);
-            this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.login_type);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.sgnup1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -284,6 +298,8 @@ namespace SDL_csharp
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,6 +324,7 @@ namespace SDL_csharp
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private System.Windows.Forms.Label logintype;
     }
 }
 
