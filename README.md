@@ -1,6 +1,6 @@
-# Restaurant-Manager
+# Restaurant-Manager 
 
- System Requirements :
+ ### System Requirements :
  
   - .NET 4.7.2 Required
   - 512 MB of RAM or Higher 
@@ -11,7 +11,7 @@
   - C# .NET winforms Module along with Visual Studio.
   
  
- Instructions :
+ ### Instructions :
  
   - Add Bunifu_UI_v1.52.dll into your references of Project Solution if its not Present there.
   - Install mysql-connector-net-8.0.22.msi to Get Mysql.Data it into the Project Solution References.
