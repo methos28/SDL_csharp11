@@ -42,7 +42,9 @@ namespace SDL_csharp
             data db = new data();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM `dbs_personal` WHERE `username` = @usn and `Password` = @pswd and `login_type` = @login",db.getConnection());
+            MySqlCommand cmdx = new MySqlCommand("SELECT `Username`,`login_type` FROM `dbs_personal` WHERE `Username` = @usn AND `login_type` = @login ", db.getConnection());
             DataTable table = new DataTable();
+
 
             db.openConnection();
             String username = textBox1.Text;
@@ -53,6 +55,8 @@ namespace SDL_csharp
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = password;
             cmd.Parameters.Add("@login", MySqlDbType.VarChar).Value = login;
+            cmdx.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
+            cmdx.Parameters.Add("@login", MySqlDbType.VarChar).Value = login;
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
             
@@ -75,7 +79,15 @@ namespace SDL_csharp
             }
             else
             {
-                MessageBox.Show("Incorrect Username or Password");
+                if(cmdx.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Incorrect Username or Password");
+                }
+                else
+                {
+                    MessageBox.Show("You have selected wrong Login Type","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
 
             }
            
