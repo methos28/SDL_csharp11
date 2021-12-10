@@ -12,7 +12,7 @@
   
  
  ### Instructions :
- 
+  - First of all this is the CODE. You'll Have to Open the solution with .SLN Extention in Visual Studio with below settings and Then Produce the .EXE file with it to       Run the Project
   - Add Bunifu_UI_v1.52.dll into your references of Project Solution if its not Present there.
   - Install mysql-connector-net-8.0.22.msi to Get Mysql.Data it into the Project Solution References.
   - Add Mysql.Data in References of Project Solution if its not there.
