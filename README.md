@@ -21,4 +21,6 @@
 
 ### NOTE : 
  It has a memory leak on Sign in module so try not to sign in multiple times in the single execution.
+ I am still working on the project modifications, so if you find half cooked things in there its because it.
+ You can Edit things on your side as well no problems with that.
    
