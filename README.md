@@ -18,4 +18,7 @@
   - Add Mysql.Data in References of Project Solution if its not there.
   - Add sdl_database into XAMPP>mysql>data>... to Create the database to Link it to the Software.
   - Add any missing references in Project Solution.
+
+###NOTE : 
+ It has a memory leak on Sign in module so try not to sign in multiple times in the single execution.
    
