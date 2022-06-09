@@ -39,7 +39,8 @@ namespace SDL_csharp
         //login Button
         private void button1_Click(object sender, EventArgs e)
         {
-            data db = new data();
+            
+            var db = new data();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand cmd = new MySqlCommand("SELECT * FROM `dbs_personal` WHERE `username` = @usn and `Password` = @pswd and `login_type` = @login",db.getConnection());
             MySqlCommand cmdx = new MySqlCommand("SELECT `Username`,`login_type` FROM `dbs_personal` WHERE `Username` = @usn AND `login_type` = @login ", db.getConnection());
@@ -98,7 +99,7 @@ namespace SDL_csharp
         private void Form1_Load(object sender, EventArgs e)
         {
 
-
+            
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -111,6 +112,11 @@ namespace SDL_csharp
         private void button1_MouseHover(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

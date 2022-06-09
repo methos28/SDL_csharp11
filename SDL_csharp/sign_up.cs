@@ -49,7 +49,7 @@ namespace SDL_csharp
 
 
             data db = new data();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`Username`, `Password`, `Email`, `Contact`, `login_type`) VALUES (@usn , @pswd, @eml, @cnt, @lgn)", db.getConnection());
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `dbs_personal`(`username`, `password`, `email`, `contact`, `login_type`) VALUES (@usn , @pswd, @eml, @cnt, @lgn)", db.getConnection());
 
             cmd.Parameters.Add("@usn", MySqlDbType.VarChar).Value = usr;
             cmd.Parameters.Add("@pswd", MySqlDbType.VarChar).Value = pswd;
@@ -103,5 +103,14 @@ namespace SDL_csharp
 
         }
 
+        private void sgnup2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

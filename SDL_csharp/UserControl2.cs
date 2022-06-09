@@ -43,7 +43,7 @@ namespace SDL_csharp
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
             listBox1.DataSource = table;
-            listBox1.DisplayMember = "Itemname";
+            listBox1.DisplayMember = "ItemName";
             db.closeConnection();
         }
         //
@@ -206,7 +206,7 @@ namespace SDL_csharp
             {
                 Random rn = new Random();
 
-                string i = "B_"+rn.Next().ToString();
+                string i = "BILL_"+rn.Next().ToString();
                 print.Title = "\r\n\r\n Restaurent Name \r\n\r\n";
                 print.SubTitle = "\r\n Bill No. : " + i.ToString() + "\r\n Date:" + DateTime.Now.Date.ToString("MM/dd/yyyy") + "\r\n Time : " + DateTime.Now.TimeOfDay.ToString();
                 print.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;

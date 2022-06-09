@@ -29,6 +29,7 @@ namespace SDL_csharp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@ namespace SDL_csharp
             this.add_b = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.combo_t = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,6 +138,11 @@ namespace SDL_csharp
             this.combo_t.Size = new System.Drawing.Size(186, 33);
             this.combo_t.TabIndex = 9;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,5 +176,6 @@ namespace SDL_csharp
         private System.Windows.Forms.Button add_b;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox combo_t;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

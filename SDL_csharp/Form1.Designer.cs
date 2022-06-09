@@ -45,8 +45,8 @@ namespace SDL_csharp
             this.sgnup1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.login_type = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.usnsp = new Guna.UI2.WinForms.Guna2Separator();
+            this.pswdsp = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.logintype = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -139,12 +139,14 @@ namespace SDL_csharp
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.textBox1.Location = new System.Drawing.Point(28, 210);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(331, 18);
             this.textBox1.TabIndex = 7;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // textBox2
             // 
@@ -224,25 +226,25 @@ namespace SDL_csharp
             this.login_type.Size = new System.Drawing.Size(330, 36);
             this.login_type.TabIndex = 12;
             // 
-            // guna2Separator1
+            // usnsp
             // 
-            this.guna2Separator1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(27, 227);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(331, 10);
-            this.guna2Separator1.TabIndex = 13;
+            this.usnsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.usnsp.BackColor = System.Drawing.Color.Transparent;
+            this.usnsp.FillColor = System.Drawing.Color.Black;
+            this.usnsp.Location = new System.Drawing.Point(27, 227);
+            this.usnsp.Name = "usnsp";
+            this.usnsp.Size = new System.Drawing.Size(331, 10);
+            this.usnsp.TabIndex = 13;
             // 
-            // guna2Separator2
+            // pswdsp
             // 
-            this.guna2Separator2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2Separator2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Separator2.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator2.Location = new System.Drawing.Point(82, 316);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(331, 10);
-            this.guna2Separator2.TabIndex = 14;
+            this.pswdsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pswdsp.BackColor = System.Drawing.Color.Transparent;
+            this.pswdsp.FillColor = System.Drawing.Color.Black;
+            this.pswdsp.Location = new System.Drawing.Point(82, 316);
+            this.pswdsp.Name = "pswdsp";
+            this.pswdsp.Size = new System.Drawing.Size(331, 10);
+            this.pswdsp.TabIndex = 14;
             // 
             // guna2ShadowPanel1
             // 
@@ -254,7 +256,7 @@ namespace SDL_csharp
             this.guna2ShadowPanel1.Controls.Add(this.label6);
             this.guna2ShadowPanel1.Controls.Add(this.label3);
             this.guna2ShadowPanel1.Controls.Add(this.textBox1);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2Separator1);
+            this.guna2ShadowPanel1.Controls.Add(this.usnsp);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(55, 31);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -280,7 +282,7 @@ namespace SDL_csharp
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(949, 553);
-            this.Controls.Add(this.guna2Separator2);
+            this.Controls.Add(this.pswdsp);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.sgnup1);
             this.Controls.Add(this.button1);
@@ -321,8 +323,8 @@ namespace SDL_csharp
         private System.Windows.Forms.Button sgnup1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2ComboBox login_type;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private Guna.UI2.WinForms.Guna2Separator usnsp;
+        private Guna.UI2.WinForms.Guna2Separator pswdsp;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label logintype;
     }
